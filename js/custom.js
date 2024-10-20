@@ -66,9 +66,9 @@ $(function () {
   });
 
   // ANCHOR
-  document.querySelectorAll(".btn").forEach((button) => {
+ document.querySelectorAll(".btn").forEach((button) => {
     button.addEventListener("click", function () {
-      const targetSection = document.querySelector(".section-contact-form");
+      const targetSection = document.querySelector(".bg-form.text-white");
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
