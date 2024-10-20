@@ -1133,6 +1133,8 @@ section + section {
   opacity: 0.8;
 }
 
+/* WIDGET REVIEW */
+
 @media (max-width: 575px) {
   .widget iframe {
     margin: auto !important;
@@ -1146,7 +1148,7 @@ section + section {
     max-width: 80% !important;
   }
 }
-/* WIDGET REVIEW */
+
 .kOpUPX {
   height: 100px !important;
 }
