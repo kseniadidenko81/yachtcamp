@@ -426,7 +426,7 @@ section + section {
 /* SECTION WHY */
 .main-screen,
 .section-why .main-screen {
-  background-image: url("../img/img_desc/main_img.png");
+  background-image: url("../img/img_desc/main_img.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -446,7 +446,7 @@ section + section {
 }
 
 .section-why .main-screen {
-  background-image: url("../img/img_desc/why_we_img.png");
+  background-image: url("../img/img_desc/why_we_img.webp");
   background-repeat: no-repeat;
 }
 
@@ -629,7 +629,7 @@ section + section {
   right: 0;
   width: 220px;
   height: 220px;
-  background-image: url("../img/icon_desc/marine_naval_big.png");
+  background-image: url("../img/icon_desc/marine_naval_big.webp");
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -641,7 +641,7 @@ section + section {
   right: 0;
   width: 168px;
   height: 168px;
-  background-image: url("../img/icon_desc/camp_rope_icon.png");
+  background-image: url("../img/icon_desc/camp_rope_icon.webp");
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -977,7 +977,7 @@ section + section {
 .fqs-header::after {
   top: 17px;
   left: 17px;
-  background-image: url(../img/icon_desc/anchor_icon.png);
+  background-image: url(../img/icon_desc/anchor_icon.webp);
   background-size: contain;
   background-repeat: no-repeat;
   width: 25px;
@@ -1119,7 +1119,7 @@ section + section {
   background-color: #fff;
   border: 1px solid #011928;
   padding: 10px;
-  background-image: url(../img/icon_desc/anchor_icon.png);
+  background-image: url(../img/icon_desc/anchor_icon.webp);
   background-size: 40px;
   background-repeat: no-repeat;
   width: 42px;
@@ -1134,6 +1134,10 @@ section + section {
 }
 
 /* WIDGET REVIEW */
+
+.widget iframe span.tp-widget-logo {
+  margin: 0 auto 8px !important;
+}
 
 @media (max-width: 767px) {
   .widget iframe {
@@ -1158,7 +1162,7 @@ section + section {
   border: none !important;
   width: 100px !important;
   height: 34px !important;
-  background-image: url(../img/icon_desc/Google_logo.png) !important;
+  background-image: url(../img/icon_desc/Google_logo.webp) !important;
   background-repeat: no-repeat !important;
   background-size: 100px !important;
   border-radius: 0 !important;
