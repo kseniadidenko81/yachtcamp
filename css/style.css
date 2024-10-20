@@ -1133,21 +1133,32 @@ section + section {
   opacity: 0.8;
 }
 
-.kOpUPX {
-  height: 100px !important;
+@media (max-width: 575px) {
+  .widget iframe {
+    margin: auto !important;
+    width: 60% !important;
+    min-width: 60% !important;
+  }
 }
 
-.jHcWgP {
+@media (min-width: 992px) {
+  .widget iframe {
+    max-width: 80% !important;
+  }
+}
+/* WIDGET REVIEW */
+.kOpUPX {
+  height: 100px !important;
 }
 
 .Icon__IconContainer-sc-11wrh3u-0 {
   background-color: transparent !important;
   border: none !important;
-  width: 62px !important;
-  height: 20px !important;
+  width: 100px !important;
+  height: 34px !important;
   background-image: url(../img/icon_desc/Google_logo.png) !important;
   background-repeat: no-repeat !important;
-  background-size: 60px !important;
+  background-size: 100px !important;
   border-radius: 0 !important;
 }
 
