@@ -1132,3 +1132,25 @@ section + section {
 .back-to-top-btn:hover {
   opacity: 0.8;
 }
+
+.kOpUPX {
+  height: 100px !important;
+}
+
+.jHcWgP {
+}
+
+.Icon__IconContainer-sc-11wrh3u-0 {
+  background-color: transparent !important;
+  border: none !important;
+  width: 62px !important;
+  height: 20px !important;
+  background-image: url(../img/icon_desc/Google_logo.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: 60px !important;
+  border-radius: 0 !important;
+}
+
+.Icon__IconContainer-sc-11wrh3u-0 svg {
+  opacity: 0 !important;
+}
