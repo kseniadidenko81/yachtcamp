@@ -770,9 +770,9 @@ section + section {
 }
 
 .carousel-wrap {
-  max-width: 635px;
+  max-width: 702px;
   width: 100%;
-  height: 520px;
+  height: 490px;
   margin: 0 auto;
   position: relative;
 }
@@ -792,7 +792,6 @@ section + section {
 #carousel1 .card-body p {
   max-height: 12.5em;
   overflow-y: auto;
-  /* line-height: 1.5em; */
 }
 
 @media (min-width: 768px) {
@@ -803,36 +802,36 @@ section + section {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .carousel-wrap {
-    max-width: 400px;
+    max-width: 480px;
     width: 100%;
-    height: 540px;
+    height: 520px;
   }
 }
 
 @media (max-width: 767px) {
   .carousel-wrap {
-    max-width: 400px;
+    max-width: 444px;
     width: 100%;
-    height: 480px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 620px) {
+  .carousel-wrap {
+    max-width: 320px;
+    width: 100%;
+    height: 520px;
   }
 }
 
 @media (max-width: 480px) {
-  .carousel-wrap {
-    max-width: 300px;
-    width: 100%;
-    height: 500px;
-  }
-}
-
-@media (max-width: 420px) {
   .carousel-wrap {
     max-width: 265px;
   }
 }
 
 .carousel > li {
-  max-width: 444px;
+  max-width: 560px;
   width: 100%;
   background: #fff;
   display: inline-block;
@@ -859,7 +858,7 @@ section + section {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   #carousel2 .carousel-wrap {
     max-width: 250px;
     height: 380px;
@@ -868,21 +867,21 @@ section + section {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .carousel > li {
-    max-width: 400px;
+    max-width: 480px;
     width: 100%;
   }
 }
 
 @media (max-width: 767px) {
   .carousel > li {
-    max-width: 400px;
+    max-width: 444px;
     width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 620px) {
   .carousel > li {
-    max-width: 300px;
+    max-width: 320px;
     width: 100%;
   }
 
@@ -891,7 +890,7 @@ section + section {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .carousel > li {
     max-width: 250px;
   }
@@ -935,7 +934,7 @@ section + section {
 .left-pos {
   background: #ccc;
   opacity: 0.5;
-  margin-left: -12em !important;
+  margin-left: -10em !important;
   z-index: 1000;
   transform: scale(0.75);
 }
@@ -948,27 +947,27 @@ section + section {
 
 @media (max-width: 767px) {
   .left-pos {
-    margin-left: -113px !important;
+    margin-left: -170px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .left-pos {
+    margin-left: -130px !important;
+  }
+
+  #carousel2 .left-pos {
+    margin-left: -128px !important;
   }
 }
 
 @media (max-width: 480px) {
   .left-pos {
-    margin-left: -85px !important;
+    margin-left: -75px !important;
   }
 
   #carousel2 .left-pos {
-    margin-left: -70px !important;
-  }
-}
-
-@media (max-width: 380px) {
-  .left-pos {
-    margin-left: -70px !important;
-  }
-
-  #carousel2 .left-pos {
-    margin-left: -70px !important;
+    margin-left: -80px !important;
   }
 }
 
@@ -979,7 +978,7 @@ section + section {
 
 .right-pos {
   opacity: 0.5;
-  margin-left: 16em !important;
+  margin-left: 14em !important;
   z-index: 1000;
   transform: scale(0.75);
 }
@@ -992,17 +991,17 @@ section + section {
 
 @media (max-width: 767px) {
   .right-pos {
-    margin-left: 30px !important;
+    margin-left: 95px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .right-pos {
+    margin-left: 50px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .right-pos {
-    margin-left: 35px !important;
-  }
-}
-
-@media (max-width: 380px) {
   .right-pos {
     margin-left: 25px !important;
   }
