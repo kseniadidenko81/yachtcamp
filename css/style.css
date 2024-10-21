@@ -1110,7 +1110,13 @@ section + section {
 }
 
 .fqs-item + .fqs-item {
-  margin-top: 10px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .fqs-item + .fqs-item {
+    margin-top: 14px;
+  }
 }
 
 /* SECTION CONTACT FORM */
