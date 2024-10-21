@@ -717,10 +717,10 @@ section + section {
 }
 
 /* SECTION CITATION */
-.section-citation:after {
+.section-citation h2:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -45px;
   right: 0;
   width: 220px;
   height: 220px;
