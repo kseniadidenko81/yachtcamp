@@ -24,7 +24,6 @@
       href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <!-- <link rel="stylesheet" href="css/aos.css" /> -->
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -38,11 +37,9 @@
     <header>
       <!-- HERO -->
       <div
-        class="main-screen d-flex flex-column justify-content-center align-items-center"
+        class="main-nav-screen d-flex flex-column justify-content-center align-items-center"
         id="home"
       >
-        <!-- <div class="bg-overlay"></div> -->
-
         <!-- MENU BAR -->
         <nav class="navbar navbar-expand-lg position-absolute">
           <div class="container">
@@ -113,21 +110,33 @@
 
                 <h4 class="text-center">Follow us</h4>
                 <div>
-                  <a class="btn" target="_blank" href="https://www.instagram.com/yacht.camp">
+                  <a
+                    class="btn"
+                    target="_blank"
+                    href="https://www.instagram.com/yacht.camp"
+                  >
                     <img
                       class="social-icon"
                       src="img/icon_desc/inst_icon.webp"
                       alt="social-inst-icon"
                     />
                   </a>
-                  <a class="btn" target="_blank" href="https://www.facebook.com/TheYachtCamp/">
+                  <a
+                    class="btn"
+                    target="_blank"
+                    href="https://www.facebook.com/TheYachtCamp/"
+                  >
                     <img
                       class="social-icon"
                       src="img/icon_desc/facebook_icon.webp"
                       alt="social-facebook-icon"
                     />
                   </a>
-                  <a class="btn" target="_blank" href="https://www.youtube.com/@yacht_camp">
+                  <a
+                    class="btn"
+                    target="_blank"
+                    href="https://www.youtube.com/@yacht_camp"
+                  >
                     <img
                       class="social-icon"
                       src="img/icon_desc/youtube_icon.webp"
@@ -206,15 +215,12 @@
     </header>
 
     <!-- SECTION WHY -->
-    <section class="section-why position-relative">
+    <section class="section-why">
       <div class="container">
-        <h2><span>Why</span> <span>Our Yachting</span> Course?</h2>
+        <h2>Why Our Yachting Course?</h2>
       </div>
-
       <div class="inside-section position-relative">
-        <div
-          class="main-screen position-relative d-flex flex-column justify-content-center align-items-center"
-        >
+        <div class="main-screen main-screen-top position-relative">
           <div class="container">
             <h2 class="d-flex flex-column pl-4 pl-md-0">
               <span class="d-block">Why</span>
@@ -222,44 +228,46 @@
             </h2>
           </div>
         </div>
-        <div class="text-part container">
-          <div class="row">
-            <div class="col-12 col-md-10 col-lg-8 mt-3">
-              <div class="text-left">
-                <h6 class="text-uppercase">
-                  Sail the Atlantic, Feel the Freedom
-                </h6>
-                <p>
-                  Tenerife offers ideal sailing conditions year-round, with its
-                  mix of calm seas and exhilarating winds. You won’t just learn
-                  to sail—you’ll experience the magic of yachting on some of the
-                  most beautiful waters in the world.
-                </p>
+        <div class="text-part main-screen">
+          <div class="container">
+            <div class="row g-3">
+              <div class="col-12 col-md-9 col-lg-8">
+                <div class="text-left">
+                  <h6 class="text-uppercase">
+                    Sail the Atlantic, Feel the Freedom
+                  </h6>
+                  <p>
+                    Tenerife offers ideal sailing conditions year-round, with
+                    its mix of calm seas and exhilarating winds. You won’t just
+                    learn to sail—you’ll experience the magic of yachting on
+                    some of the most beautiful waters in the world.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="col-12 col-md-10 col-lg-8 mt-3">
-              <div class="text-left">
-                <h6 class="text-uppercase">Personalized Instruction</h6>
-                <p>
-                  Whether you're a complete beginner or already have some
-                  experience, our expert instructors tailor the course to your
-                  level, ensuring you get the most out of every moment. Learn at
-                  your own pace, with plenty of one-on-one attention.
-                </p>
+              <div class="col-12 col-md-9 col-lg-8">
+                <div class="text-left">
+                  <h6 class="text-uppercase">Personalized Instruction</h6>
+                  <p>
+                    Whether you're a complete beginner or already have some
+                    experience, our expert instructors tailor the course to your
+                    level, ensuring you get the most out of every moment. Learn
+                    at your own pace, with plenty of one-on-one attention.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="col-12 col-md-10 col-lg-8 mt-3">
-              <div class="text-left">
-                <h6 class="text-uppercase">Fast-Track to Competency</h6>
-                <p>
-                  In just two days, you'll gain the essential knowledge and
-                  skills you need to confidently sail your own boat. We'll teach
-                  you everything from rigging, navigation, and safety, to
-                  advanced techniques like reading the wind and plotting your
-                  course.
-                </p>
+              <div class="col-12 col-md-9 col-lg-8">
+                <div class="text-left">
+                  <h6 class="text-uppercase">Fast-Track to Competency</h6>
+                  <p>
+                    In just two days, you'll gain the essential knowledge and
+                    skills you need to confidently sail your own boat. We'll
+                    teach you everything from rigging, navigation, and safety,
+                    to advanced techniques like reading the wind and plotting
+                    your course.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -339,6 +347,51 @@
 
     <!-- SECTION COURSE -->
     <section class="section-course">
+      <div class="position-relative">
+        <h2 class="text-center">Who Is This Course For?</h2>
+        <div class="container cards">
+          <div class="main-pos-card order-2 order-md-0">
+            <div class="block-row row">
+              <div class="card col-md-12">
+                <h3>No previous experience? No problem.</h3>
+                <p>
+                  Our instructors will guide you from the basics to advanced
+                  maneuvers with ease.
+                </p>
+              </div>
+              <div class="card col-md-12">
+                <h3>Already have some experience?</h3>
+                <p>
+                  We’ll help you refine your skills and gain the confidence to
+                  take on bigger sailing challenges.
+                </p>
+              </div>
+              <a href="javascript:void(0);" class="btn addittional-btn"
+                >Book Now</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="inside-pos position-relative d-flex"
+            style="flex-direction: column"
+          >
+            <h2>
+              <span class="d-block">Who Is This</span>
+              <span class="d-block">Course For?</span>
+            </h2>
+            <img
+              class="yacht-img"
+              src="img/img_desc/yacht_img.webp"
+              alt="course yachting"
+            />
+            <a href="javascript:void(0);" class="btn addittional-btn"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
       <div class="container position-relative">
         <h2 class="text-center">Who Is This Course For?</h2>
         <div class="cards">
@@ -624,9 +677,7 @@
         <div class="container py-5">
           <div class="row">
             <div class="col-12 col-md-6">
-              <dl
-                class="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start py-2"
-              >
+              <dl class="d-flex align-items-center py-2">
                 <dt class="mr-2">
                   <img
                     class=""
@@ -643,9 +694,7 @@
                   </p>
                 </dd>
               </dl>
-              <dl
-                class="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start py-2"
-              >
+              <dl class="d-flex align-items-center py-2">
                 <dt class="mr-2">
                   <img
                     class=""
@@ -1022,7 +1071,8 @@
               <h2>FOLLOW US</h2>
               <div class="d-flex align-items-center">
                 <a
-                  class="mx-1 icon-to-social" target="_blank"
+                  class="mx-1 icon-to-social"
+                  target="_blank"
                   href="https://www.instagram.com/yacht.camp"
                   ><img
                     src="img/icon_desc/inst_icon.webp"
@@ -1030,7 +1080,8 @@
                     style="max-width: 58px"
                 /></a>
                 <a
-                  class="icon-to-social mx-1" target="_blank"
+                  class="icon-to-social mx-1"
+                  target="_blank"
                   href="https://www.facebook.com/TheYachtCamp/"
                   ><img
                     src="img/icon_desc/facebook_icon.webp"
@@ -1038,7 +1089,8 @@
                     style="max-width: 60px"
                 /></a>
                 <a
-                  class="mx-1 icon-to-social" target="_blank"
+                  class="mx-1 icon-to-social"
+                  target="_blank"
                   href="https://www.youtube.com/@yacht_camp"
                   ><img
                     src="img/icon_desc/youtube_icon.webp"
@@ -1066,7 +1118,7 @@
                       data-theme="light"
                     >
                       <a
-                        href="https://www.trustpilot.com/review/your-business-url"
+                        href="https://invitejs.trustpilot.com/tp.min.js"
                         target="_blank"
                         rel="noopener"
                         >Trustpilot</a
@@ -1118,6 +1170,13 @@
     <script src="js/aos.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- <script>
+      (function(w,d,s,r,n){w.TrustpilotObject=n;w[n]=w[n]function(){(w[n].q=w[n].q[]).push(arguments)};
+          a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];
+          f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+          tp('register', 'nTGgmwgcBoc9Lm5N');
+    </script> -->
 
     <script
       src="https://static.elfsight.com/platform/platform.js"
