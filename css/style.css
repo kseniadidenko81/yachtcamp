@@ -717,7 +717,6 @@ section + section {
 }
 
 /* SECTION CITATION */
-
 .section-citation:after {
   content: "";
   position: absolute;
@@ -728,6 +727,10 @@ section + section {
   background-image: url("../img/icon_desc/marine_naval_big.webp");
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+.section-citation h2 {
+  margin-bottom: 40px;
 }
 
 .section-gallery-slider:after {
@@ -788,6 +791,12 @@ section + section {
   overflow-y: auto;
   /* line-height: 1.5em; */
 }
+@media (min-width: 768px) {
+  .section-citation h2 {
+    margin-bottom: 80px;
+  }
+}
+
 
 @media (min-width: 768px) and (max-width: 991px) {
   .carousel-wrap {
