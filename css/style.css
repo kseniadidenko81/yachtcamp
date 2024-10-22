@@ -1059,6 +1059,12 @@ section + section {
   padding-inline-start: 1.5rem;
 }
 
+@media (min-width: 992px) {
+  .bg-pricing ul {
+    max-width: 90%;
+  }
+}
+
 .bg-pricing .icon-pricing {
   width: 40px;
   max-width: 40px;
