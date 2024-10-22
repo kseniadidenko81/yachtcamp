@@ -800,6 +800,10 @@ section + section {
   margin-bottom: 40px;
 }
 
+.swiper-citation .card {
+  border: 3px solid #b28224;
+}
+
 .section-citation::after {
   top: 40px;
   right: 0;
@@ -855,22 +859,24 @@ section + section {
   width: 28px;
 }
 
-.swiper-container {
+.swiper-citation {
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 4px;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 480px) {
-  .swiper-container {
+  .swiper-citation {
     width: 50%;
   }
 }
 
 @media (min-width: 560px) {
-  .swiper-container {
+  .swiper-citation {
     height: auto;
   }
 }
@@ -1105,9 +1111,8 @@ section + section {
 .section-contact-form .form-control:focus,
 .section-contact-form .form-control:active {
   background: #324149;
-  border-color: #324149;
+  border: 2px solid #324149;
   color: #e3d4c0;
-  font-size: 18px;
   box-shadow: none;
 }
 
@@ -1151,21 +1156,13 @@ section + section {
   opacity: 0;
 }
 
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  box-shadow: 0 0 0 30px #324149 inset !important;
-  color: #e3d4c0 !important;
-} */
-
 /* Для Google Chrome и других WebKit-браузеров */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
   background-color: #324149 !important;
   color: #e3d4c0 !important;
-  border: 1px solid #324149 !important;
+  border: 2px solid #324149 !important;
   -webkit-box-shadow: 0 0 0px 1000px #324149 inset !important;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -1176,12 +1173,18 @@ textarea:-moz-autofill,
 select:-moz-autofill {
   background-color: #324149 !important;
   color: #e3d4c0 !important;
-  border: 1px solid #324149 !important;
+  border: 2px solid #324149 !important;
 }
 
 input:-webkit-autofill::first-line,
 textarea:-webkit-autofill::first-line {
-  color: #e3d4c0 !important; /* Темно-зеленый текст */
+  color: #e3d4c0 !important;
+}
+
+input.form-control,
+textarea.form-control {
+  font-family: var(--base-font-family);
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -1195,6 +1198,11 @@ textarea:-webkit-autofill::first-line {
   background: #efedeb;
 }
 
+@media (min-width: 768px) {
+  .section-footer h2 {
+    margin-bottom: 24px;
+  }
+}
 .logo-footer {
   max-width: 436px;
 }
@@ -1220,6 +1228,19 @@ textarea:-webkit-autofill::first-line {
   .links-contact {
     font-size: 24px;
   }
+}
+
+input:invalid {
+  border-color: #b28224;
+}
+
+.invalid-feedback {
+  display: none;
+  color: #b28224;
+}
+
+input.is-invalid + .invalid-feedback {
+  display: block;
 }
 
 .grl {
