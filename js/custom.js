@@ -124,7 +124,7 @@ var swiper2 = new Swiper(".swiper2", {
   autoHeight: true,
   slidesPerView: 1,
   loop: true,
-  loopedSlides: 5,
+  loopedSlides: 3,
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
