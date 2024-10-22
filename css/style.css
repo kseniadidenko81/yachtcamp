@@ -414,6 +414,10 @@ section + section {
   outline: none;
 }
 
+.navbar-collapse .btn.addittional-btn {
+  text-transform: uupercase;
+}
+
 .navbar-collapse.show {
   display: flex;
   flex-direction: column;
