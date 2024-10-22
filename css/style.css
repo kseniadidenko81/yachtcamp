@@ -978,7 +978,7 @@ section + section {
 
 .section-gallery-slider .swiper-cont {
   overflow: hidden;
-  max-width: 920px;
+  max-width: 680px;
 }
 
 .section-gallery-slider h2:after {
