@@ -39,7 +39,7 @@
         id="home"
       >
         <!-- MENU BAR -->
-        <nav class="navbar navbar-expand-lg position-absolute">
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
           <div class="container">
             <div
               class="nav-top d-flex justify-content-between align-items-center w-100"
@@ -1154,6 +1154,18 @@
       src="https://static.elfsight.com/platform/platform.js"
       async
     ></script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+
+        if (window.scrollY > 0) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
 
     <script>
       $(document).ready(function () {
