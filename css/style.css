@@ -415,7 +415,7 @@ section + section {
 }
 
 .navbar-collapse .btn.addittional-btn {
-  text-transform: uupercase;
+  text-transform: uppercase;
 }
 
 .navbar-collapse.show {
