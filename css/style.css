@@ -538,6 +538,10 @@ section + section {
   z-index: 10;
 }
 
+.hero-text p {
+  max-width: 98%;
+}
+
 .icon-head {
   max-width: 80px;
 }
