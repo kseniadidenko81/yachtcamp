@@ -125,6 +125,7 @@ function initSwiper2() {
     autoHeight: true,
     slidesPerView: 1,
     loop: true,
+    loopedSlides: 3,
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -143,10 +144,12 @@ function initSwiper2() {
   });
 }
 
-$(document).ready(function () {
-  initSwiper2();
+initSwiper2();
 
-  $(window).on("load", function () {
-    initSwiper2();
-  });
-});
+// $(document).ready(function () {
+//   initSwiper2();
+
+//   $(window).on("load", function () {
+//     initSwiper2();
+//   });
+// });
