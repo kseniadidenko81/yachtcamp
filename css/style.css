@@ -1027,8 +1027,8 @@ section + section {
 }
 @media (min-width: 768px) {
   .bg-pricing .icon-pricing {
-    width: 100px;
-    max-width: 100px;
+    width: 85px;
+    max-width: 85px;
   }
 }
 
