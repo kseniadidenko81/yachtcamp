@@ -320,6 +320,28 @@ section + section {
   box-shadow: none;
 }
 
+.main-nav-screen {
+  position: relative;
+  height: 100vh; /* Высота на весь экран */
+  overflow: hidden; /* Прячем все, что выходит за пределы */
+}
+
+/* .main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Черный с прозрачностью */
+  z-index: 1; /* Убедитесь, что overlay выше изображения */
+}
+
 /* SECTION NAVBAR */
 
 .navbar.scrolled {
@@ -336,6 +358,7 @@ section + section {
   z-index: 2;
   background: transparent;
   transition: background 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .navbar.show {
@@ -511,6 +534,8 @@ section + section {
 
 .hero-text {
   max-width: 880px;
+  position: relative;
+  z-index: 10;
 }
 
 .icon-head {
