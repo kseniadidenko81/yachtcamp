@@ -325,6 +325,7 @@ section + section {
 
 .navbar.show .container {
   margin-bottom: auto;
+  padding: 0;
 }
 
 .navbar .nav-bottom {
