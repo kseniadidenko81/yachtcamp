@@ -993,11 +993,21 @@ section + section {
 
 .bg-pricing dt {
   min-width: fit-content;
-  width: 80px;
 }
 
 .bg-pricing ul {
   padding-inline-start: 1.5rem;
+}
+
+.bg-pricing .icon-pricing {
+  width: 40px;
+  max-width: 40px;
+}
+@media (min-width: 768px) {
+  .bg-pricing .icon-pricing {
+    width: 100px;
+    max-width: 100px;
+  }
 }
 
 /* SECTION FAQs */
