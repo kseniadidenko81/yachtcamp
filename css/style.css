@@ -365,6 +365,7 @@ section + section {
   background: #efedeb;
   padding: 0;
   height: 100vh;
+  z-index: 100;
 }
 
 .navbar.show .container {
