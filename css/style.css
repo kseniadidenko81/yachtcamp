@@ -68,7 +68,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-weight: bold;
   line-height: normal;
 }
@@ -265,8 +266,6 @@ section + section {
 @media (min-width: 992px) {
   .addittional-btn {
     display: flex;
-    /* font-size: 16px;
-    line-height: 24px; */
     text-transform: uppercase;
     padding: 12px;
     max-width: 180px;
@@ -279,6 +278,7 @@ section + section {
 .custom-btn:hover,
 .addittional-btn:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 .btn.custom-btn:hover,
@@ -498,6 +498,7 @@ section + section {
 
 .text-icon-card {
   font-family: var(--additional-font-family);
+  font-weight: bold;
 }
 
 .inside-section h2 {
