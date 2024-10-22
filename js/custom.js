@@ -144,12 +144,10 @@ function initSwiper2() {
   });
 }
 
-initSwiper2();
+$(document).ready(function () {
+  initSwiper2();
 
-// $(document).ready(function () {
-//   initSwiper2();
-
-//   $(window).on("load", function () {
-//     initSwiper2();
-//   });
-// });
+  $(window).on("load", function () {
+    initSwiper2();
+  });
+});
