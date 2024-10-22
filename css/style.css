@@ -281,7 +281,6 @@ section + section {
 @media (min-width: 992px) {
   .addittional-btn {
     display: flex;
-    text-transform: uppercase;
     padding: 12px;
     max-width: 180px;
     min-width: 120px;
