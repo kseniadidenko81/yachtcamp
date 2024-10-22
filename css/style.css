@@ -383,6 +383,7 @@ section + section {
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
   border-bottom: 1px solid #011928;
+  text-decoration: none;
 }
 
 .navbar .social-icon li a {
