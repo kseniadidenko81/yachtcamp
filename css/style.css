@@ -778,17 +778,32 @@ section + section {
   margin-bottom: 40px;
 }
 
-.section-citation h2::after {
-  top: -42px;
+.section-citation::after {
+  top: 40px;
   right: 0;
   background-image: url(../img/icon_desc/marine_naval_big.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 240px;
-  height: 245px;
+  width: 123px;
+  height: 123px;
   content: "";
   position: absolute;
   transition: transform 0.5s;
+}
+
+@media (min-width: 680px) {
+  .section-citation::after {
+    width: 240px;
+    height: 245px;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-citation::after {
+    right: 80px;
+  }
 }
 
 .section-citation .swiper-cont {
@@ -939,16 +954,25 @@ section + section {
 }
 
 .section-gallery-slider h2:after {
-  top: -8px;
-  right: 0;
+  top: 45px;
+  right: -10px;
   background-image: url(../img/icon_desc/camp_rope_icon.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 168px;
-  height: 168px;
+  width: 113px;
+  height: 113px;
   content: "";
   position: absolute;
   transition: transform 0.5s;
+}
+
+@media (min-width: 768px) {
+  .section-gallery-slider h2::after {
+    top: -8px;
+    right: 0;
+    width: 168px;
+    height: 168px;
+  }
 }
 
 @media (min-width: 320px) {
