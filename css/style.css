@@ -611,11 +611,30 @@ section + section {
   }
 }
 
-.section-experience .card-icon {
-  width: auto;
+.section-experience .card-icon-1 {
+  width: 140px;
+  height: 84px;
   margin: auto;
   display: flex;
-  max-height: 120px;
+}
+
+.section-experience .card-icon-2 {
+  width: 84px;
+  height: 84px;
+  margin: auto;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .section-experience .card-icon-1 {
+    width: 200px;
+    height: 120px;
+  }
+
+  .section-experience .card-icon-2 {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .section-experience ul {
