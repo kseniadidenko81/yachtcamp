@@ -322,6 +322,13 @@ section + section {
 
 /* SECTION NAVBAR */
 
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+  z-index: 100;
+}
+
 .navbar {
   padding: 15px 20px;
   top: 0;
@@ -978,7 +985,7 @@ section + section {
 
 .section-gallery-slider .swiper-cont {
   overflow: hidden;
-  max-width: 680px;
+  max-width: 620px;
 }
 
 .section-gallery-slider h2:after {
