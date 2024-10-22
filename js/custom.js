@@ -120,24 +120,33 @@ var swiper1 = new Swiper(".swiper1", {
   },
 });
 
-var swiper2 = new Swiper(".swiper2", {
-  autoHeight: true,
-  slidesPerView: 1,
-  loop: true,
-  loopedSlides: 3,
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  spaceBetween: -100,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 800,
-    modifier: 1,
-    slideShadows: false,
-  },
-  navigation: {
-    nextEl: ".swiper2-button-next",
-    prevEl: ".swiper2-button-prev",
-  },
+function initSwiper2() {
+  var swiper2 = new Swiper(".swiper2", {
+    autoHeight: true,
+    slidesPerView: 1,
+    loop: true,
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: -100,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 800,
+      modifier: 1,
+      slideShadows: false,
+    },
+    navigation: {
+      nextEl: ".swiper2-button-next",
+      prevEl: ".swiper2-button-prev",
+    },
+  });
+}
+
+$(document).ready(function () {
+  initSwiper2();
+
+  $(window).on("load", function () {
+    initSwiper2();
+  });
 });
