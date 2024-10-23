@@ -40,7 +40,7 @@ $(function () {
     });
   });
 
-  // FORM INPUT
+  // FORM (INPUT + BTN)
   $(function () {
     $("input").on("input", function () {
       var $input = $(this);
@@ -51,6 +51,53 @@ $(function () {
       } else {
         $label.removeClass("hidden-label");
       }
+    });
+  });
+
+  $(function () {
+    // Обрабатываем отправку формы
+    $("#contact-form").on("submit", function (event) {
+      event.preventDefault(); // Предотвращаем стандартную отправку формы
+
+      var $phoneInput = $("#phone");
+
+      // Проверяем, есть ли введенные данные и соответствует ли шаблону
+      if ($phoneInput.val() && !$phoneInput[0].checkValidity()) {
+        $phoneInput.addClass("is-invalid");
+      } else {
+        $phoneInput.removeClass("is-invalid");
+
+        // Здесь вы можете добавить код для отправки формы через AJAX или другой метод
+      }
+    });
+
+    // Отслеживаем изменение или ввод в поле телефона
+    $("#phone").on("input", function () {
+      var $phoneInput = $(this);
+
+      // Если пользователь вводит данные или изменяет уже автозаполненное поле
+      if ($phoneInput.val() && !$phoneInput[0].checkValidity()) {
+        $phoneInput.addClass("is-invalid");
+      } else {
+        $phoneInput.removeClass("is-invalid");
+      }
+    });
+  });
+
+  $(function () {
+    $("#contact-form").on("submit", function (event) {
+      event.preventDefault(); // Отключаем стандартное поведение формы (перезагрузку страницы)
+
+      $("#response-message")
+        .fadeIn(500)
+        .text("Thank you! Your message has been sent. We will contact you.");
+
+      setTimeout(function () {
+        $("#response-message").fadeOut(500);
+      }, 3000);
+
+      // Можно очистить поля формы, если это нужно
+      $(this).trigger("reset");
     });
   });
 
@@ -66,11 +113,20 @@ $(function () {
   });
 
   // ANCHOR
-  document.querySelectorAll(".btn").forEach((button) => {
+  document.querySelectorAll(".btn-to").forEach((button) => {
     button.addEventListener("click", function () {
-      const targetSection = document.querySelector(".bg-form.text-white");
+      const targetSection = document.querySelector("form");
       if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
+        const navbarHeight = 92;
+        const targetPosition =
+          targetSection.getBoundingClientRect().top +
+          window.scrollY -
+          navbarHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
       }
     });
   });
@@ -94,19 +150,18 @@ $(function () {
       $("html, body").animate({ scrollTop: 0 }, "smooth");
     });
   });
-
-  // GALLERY + CITATION
 });
 
 var swiper1 = new Swiper(".swiper1", {
   autoHeight: true,
   slidesPerView: 1,
   loop: true,
+  speed: 600,
+  centeredSlides: true,
   loopedSlides: 3,
   effect: "coverflow",
   grabCursor: true,
-  centeredSlides: true,
-  spaceBetween: -100,
+  spaceBetween: 0,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -120,34 +175,25 @@ var swiper1 = new Swiper(".swiper1", {
   },
 });
 
-function initSwiper2() {
-  var swiper2 = new Swiper(".swiper2", {
-    autoHeight: true,
-    slidesPerView: 1,
-    loop: true,
-    loopedSlides: 3,
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    spaceBetween: -100,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 800,
-      modifier: 1,
-      slideShadows: false,
-    },
-    navigation: {
-      nextEl: ".swiper2-button-next",
-      prevEl: ".swiper2-button-prev",
-    },
-  });
-}
-
-$(document).ready(function () {
-  initSwiper2();
-
-  $(window).on("load", function () {
-    initSwiper2();
-  });
+var swiper2 = new Swiper(".swiper2", {
+  autoHeight: true,
+  slidesPerView: 1,
+  loop: true,
+  speed: 600,
+  loopedSlides: 3,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  spaceBetween: 0,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 800,
+    modifier: 1,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: ".swiper2-button-next",
+    prevEl: ".swiper2-button-prev",
+  },
 });
