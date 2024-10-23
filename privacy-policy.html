@@ -23,6 +23,17 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/privacy.css" />
+
+    <style>
+      .page-transition {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .page-loaded .page-transition {
+        opacity: 1;
+      }
+    </style>
   </head>
 
   <body
@@ -145,7 +156,7 @@
       </nav>
     </header>
 
-    <section id="content">
+    <section id="content" class="page-transition">
       <div class="container py-4">
         <h1 class="h2">PRIVACY POLICY</h1>
         <h2 class="h5 mt-4 fw-bold">General information</h2>
@@ -226,6 +237,33 @@
         } else {
           navbar.classList.remove("scrolled");
         }
+      });
+    </script>
+
+    <!-- smooth transition to the page -->
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("body").addClass("page-loaded");
+        }, 100);
+
+        $(".navbar-nav .nav-link").on("click", function (event) {
+          event.preventDefault();
+
+          var targetPage = $(this).attr("href");
+
+          if (targetPage !== "#") {
+            $("body").removeClass("page-loaded");
+
+            setTimeout(function () {
+              window.location.href = targetPage;
+            }, 500);
+          }
+        });
+
+        window.onpopstate = function () {
+          $("body").addClass("page-loaded");
+        };
       });
     </script>
   </body>
