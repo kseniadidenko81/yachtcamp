@@ -308,11 +308,9 @@ section + section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: background-color 0.5s;
   z-index: 100;
-  padding: ;
 }
 
 @media (min-width: 768px) {
-
   .navbar.scrolled {
     padding: 6px 20px;
   }
@@ -996,8 +994,8 @@ section + section {
   top: 50%;
   padding: 0.5rem 2rem;
   color: #b28224;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   background: rgba(0, 0, 0, 0);
   border: 2px solid #b28224;
   border-radius: 1rem;
@@ -1040,7 +1038,19 @@ section + section {
 
 .swiper-button-next:after {
   content: "❯";
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .swiper-button-next:after {
+    font-size: 2rem;
+  }
 }
 
 .navigation-citation {
