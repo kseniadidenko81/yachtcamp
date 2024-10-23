@@ -94,7 +94,7 @@ $(function () {
 
       setTimeout(function () {
         $("#response-message").fadeOut(500);
-      }, 3000);
+      }, 15000);
 
       // Можно очистить поля формы, если это нужно
       $(this).trigger("reset");
