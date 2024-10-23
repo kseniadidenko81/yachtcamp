@@ -1402,9 +1402,9 @@ input.is-invalid + .invalid-feedback {
 
 @media (max-width: 767px) {
   .widget iframe {
-    width: 80% !important;
-    min-width: 80% !important;
-    margin: 20px auto !important;
+    width: 75% !important;
+    min-width: 75% !important;
+    margin: 15px auto !important;
   }
 }
 
