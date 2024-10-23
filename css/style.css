@@ -308,13 +308,13 @@ section + section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: background-color 0.5s;
   z-index: 100;
-  padding: 0;
+  padding: ;
 }
 
 @media (min-width: 768px) {
-  .navbar.scrolled .container {
-    padding-top: 6px;
-    padding-bottom: 6px;
+
+  .navbar.scrolled {
+    padding: 6px 20px;
   }
 }
 
