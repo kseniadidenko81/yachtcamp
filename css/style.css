@@ -306,9 +306,16 @@ section + section {
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
   z-index: 100;
-  padding: 6px 20px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar.scrolled .container {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 }
 
 .navbar.scrolled .navbar-brand img {
@@ -325,7 +332,7 @@ section + section {
   width: 100%;
   z-index: 2;
   background: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: 10;
 }
 
