@@ -147,6 +147,14 @@ p + p {
   }
 }
 
+ol {
+  font-family: var(--additional-font-family);
+}
+
+ol li span {
+  font-family: var(--base-font-family);
+}
+
 ol li + li {
   margin-top: 12px;
 }
