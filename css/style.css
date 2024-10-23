@@ -1204,11 +1204,19 @@ font-size: 18px;
   box-shadow: none;
 }
 
+.section-contact-form .text-font-bold {
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .section-contact-form .form-control,
   .section-contact-form .form-control:focus,
   .section-contact-form .form-control:active {
     font-size: 20px;
+  }
+
+  .section-contact-form .text-font-bold {
+    font-weight: normal;
   }
 }
 
