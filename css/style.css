@@ -48,40 +48,6 @@ body {
   }
 }
 
-/* @media (min-width: 576px) {
-  .container,
-  .container-sm {
-    max-width: 630px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container,
-  .container-md,
-  .container-sm {
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
-    max-width: 1140px;
-  }
-} */
-
 /* TYPOGRAPHY */
 
 h1,
@@ -222,8 +188,7 @@ a {
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
   outline: none;
   text-decoration: none;
   color: #b28224;
@@ -322,15 +287,9 @@ section + section {
 
 .main-nav-screen {
   position: relative;
-  height: 100vh; /* Высота на весь экран */
-  overflow: hidden; /* Прячем все, что выходит за пределы */
+  height: 100vh;
+  overflow: hidden;
 }
-
-/* .main-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 .overlay {
   position: absolute;
@@ -338,8 +297,8 @@ section + section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Черный с прозрачностью */
-  z-index: 1; /* Убедитесь, что overlay выше изображения */
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 /* SECTION NAVBAR */
@@ -349,16 +308,35 @@ section + section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s;
   z-index: 100;
+  padding: 6px 20px;
+}
+
+.navbar.scrolled .navbar-brand img {
+  max-width: 80%;
+}
+
+.navbar.scrolled .addittional-btn {
+  padding: 8px;
 }
 
 .navbar {
-  padding: 15px 20px;
+  padding: 15px 0;
   top: 0;
   width: 100%;
   z-index: 2;
   background: transparent;
-  transition: background 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+}
+
+.navbar .copy-wrap {
+  font-size: 16px;
 }
 
 .navbar.show {
@@ -405,12 +383,21 @@ section + section {
 .navbar-expand-lg .navbar-nav .nav-item {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-  line-height: 2.5rem;
 }
 
 .navbar-brand {
   padding: 0;
   margin: 0;
+}
+
+.navbar-brand img {
+  max-width: 80%;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img {
+    max-width: 100%;
+  }
 }
 
 .nav-item .nav-link {
@@ -444,6 +431,12 @@ section + section {
   height: 35px;
   outline: none;
 }
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .navbar-collapse .btn.addittional-btn {
   text-transform: uppercase;
@@ -454,7 +447,6 @@ section + section {
   flex-direction: column;
   margin: auto;
   text-align: center;
-  padding: 12px 0;
   background: #fff;
 }
 
@@ -537,6 +529,7 @@ section + section {
   max-width: 880px;
   position: relative;
   z-index: 10;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
 }
 
 .hero-text p {
@@ -841,37 +834,26 @@ section + section {
   border: 3px solid #b28224;
 }
 
-.section-citation::after {
-  top: 40px;
-  right: 0;
-  background-image: url(../img/icon_desc/marine_naval_big.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 123px;
-  height: 123px;
-  content: "";
-  position: absolute;
-  transition: transform 0.5s;
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-@media (min-width: 680px) {
-  .section-citation::after {
-    width: 240px;
-    height: 245px;
-    top: 0;
-    z-index: -1;
-  }
-}
-
-@media (min-width: 992px) {
-  .section-citation::after {
-    right: 80px;
-  }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-citation .swiper-cont {
   overflow: hidden;
-  max-width: 960px;
+  max-width: 780px;
+}
+
+.section-gallery-slider .swiper-cont {
+  overflow: hidden;
+  max-width: 620px;
 }
 
 @media (min-width: 480px) {
@@ -901,20 +883,13 @@ section + section {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 4px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 480px) {
   .swiper-citation {
     width: 50%;
-  }
-}
-
-@media (min-width: 560px) {
-  .swiper-citation {
-    height: auto;
   }
 }
 
@@ -930,7 +905,11 @@ section + section {
 }
 
 .swiper-slide-active .swiper-item {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.swiper-slide .swiper-item img {
+  border-radius: 12px;
 }
 
 .swiper-slide-active:hover .swiper-item {
@@ -941,6 +920,18 @@ section + section {
   max-width: 165px;
   width: 100%;
   border-radius: 50%;
+}
+
+.swiper-slide .card-body p {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .swiper-slide .card-body p {
+    min-height: 160px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -987,16 +978,70 @@ section + section {
 .swiper-rtl .swiper-button-next:after,
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  display: none;
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  padding: 0.5rem 2rem;
+  color: #b28224;
+  font-size: 2rem;
+  line-height: 2rem;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid #b28224;
+  border-radius: 1rem;
+  transform-origin: 50% 50%;
+  transform: translateY(-50%);
+  transition: ease all 0.5s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(178, 130, 36, 0.7);
+  border: 2px solid transparent;
+}
+
+.swiper2-button-next,
+.swiper2-button-prev {
+  color: #011928;
+  border: 2px solid #011928;
+}
+
+.swiper2-button-next:hover,
+.swiper2-button-next:focus,
+.swiper2-button-prev:hover,
+.swiper2-button-prev:focus {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(1, 25, 40, 0.85);
+  border: 2px solid transparent;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 100%;
+}
+.swiper-button-prev:before {
+  content: "❮";
+}
+
+.swiper-button-next:after {
+  content: "❯";
+  font-size: 2rem;
 }
 
 .navigation-citation {
   position: absolute;
-  bottom: -50px;
+  bottom: -65px;
   width: 100%;
-  max-width: 300px;
-  height: 30px;
-  padding-bottom: 30px;
+  max-width: 186px;
+  height: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1008,28 +1053,6 @@ section + section {
   left: 50%;
   transform: translateX(-50%);
 }
-.swiper-button-prev,
-.swiper-button-next {
-  width: 65px;
-}
-
-.section-gallery-slider .swiper-cont {
-  overflow: hidden;
-  max-width: 620px;
-}
-
-.section-gallery-slider h2:after {
-  top: 45px;
-  right: -10px;
-  background-image: url(../img/icon_desc/camp_rope_icon.webp);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 113px;
-  height: 113px;
-  content: "";
-  position: absolute;
-  transition: transform 0.5s;
-}
 
 @media (min-width: 768px) {
   .section-gallery-slider h2::after {
@@ -1037,6 +1060,10 @@ section + section {
     right: 0;
     width: 168px;
     height: 168px;
+  }
+
+  .section-gallery-slider .swiper-item {
+    height: 394px;
   }
 }
 
@@ -1099,7 +1126,7 @@ section + section {
 
 .fqs-header {
   font-size: 18px;
-  padding: 16px 16px 16px 50px;
+  padding: 16px 16px 16px 28px;
   font-weight: 600;
   cursor: pointer;
   position: relative;
@@ -1113,8 +1140,8 @@ section + section {
 
 .fqs-header::after {
   top: 17px;
-  left: 17px;
-  background-image: url(../img/icon_desc/anchor_icon.webp);
+  right: 17px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-chevron-down accordion-item-header-icon'%3E%3Cpath d='m6 9 6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
   width: 25px;
@@ -1236,6 +1263,12 @@ textarea.form-control {
   }
 }
 
+.success-message {
+  color: #b28224;
+  font-size: 16px;
+  display: none;
+}
+
 /* SECTION FOOTER */
 .section-footer {
   background: #efedeb;
@@ -1319,18 +1352,20 @@ input.is-invalid + .invalid-feedback {
   background-color: #fff;
   border: 1px solid #011928;
   padding: 10px;
-  background-image: url(../img/icon_desc/anchor_icon.webp);
-  background-size: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='currentColor' class='bi bi-chevron-double-up' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z'%3E%3C/path%3E%3Cpath fill-rule='evenodd' d='M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 28px;
   background-repeat: no-repeat;
-  width: 42px;
-  height: 45px;
+  background-position: center;
+  width: 38px;
+  height: 38px;
   border-radius: 4px;
-  transform: rotate(-180deg);
   z-index: 100;
+  transition: transform 0.3s ease;
 }
 
 .back-to-top-btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  transform: translateY(-6px);
 }
 
 /* WIDGET REVIEW */
