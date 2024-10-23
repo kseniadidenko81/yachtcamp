@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" />
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style-privacy.css" />
+    <link rel="stylesheet" href="css/privacy.css" />
   </head>
 
   <body
@@ -54,7 +54,10 @@
             </button>
           </div>
 
-          <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+          <div
+            class="navbar-collapse collapse justify-content-end"
+            id="navbarNav"
+          >
             <ul class="navbar-nav py-2 py-md-0">
               <li class="nav-item">
                 <a href="courses.html" class="nav-link smoothScroll">Courses</a>
@@ -211,7 +214,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/privacy-terms.js"></script>
 
     <!-- Scrolled Navbar -->
     <script>
@@ -223,38 +226,6 @@
         } else {
           navbar.classList.remove("scrolled");
         }
-      });
-    </script>
-
-    <!-- Height navbar -->
-    <script>
-      $(document).ready(function () {
-        function adjustContentPadding() {
-          var navbarHeight = $("#navbar").outerHeight();
-          var extraPadding = 16;
-          $("#content").css("padding-top", navbarHeight + extraPadding + "px");
-        }
-
-        adjustContentPadding();
-
-        $(window).resize(function () {
-          adjustContentPadding();
-        });
-      });
-    </script>
-
-    <!-- Go to page -->
-    <script>
-      $(document).ready(function () {
-        $(".navbar-nav .nav-link").on("click", function (event) {
-          event.preventDefault();
-
-          var targetPage = $(this).attr("href");
-
-          if (targetPage !== "#") {
-            window.location.href = targetPage;
-          }
-        });
       });
     </script>
   </body>
