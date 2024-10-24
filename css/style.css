@@ -308,7 +308,24 @@ section + section {
 
 /* SECTION NAVBAR */
 
+.navbar {
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+}
+
 .navbar.scrolled {
+  padding: 6px 0;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
@@ -325,24 +342,14 @@ section + section {
   max-width: 80%;
 }
 
+@media (min-width: 768px) {
+  .navbar.scrolled .navbar-brand img {
+    max-width: 50%;
+  }
+}
+
 .navbar.scrolled .addittional-btn {
   padding: 8px;
-}
-
-.navbar {
-  padding: 15px 0;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  background: transparent;
-  transition: all 0.5s ease-in-out;
-  z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
 }
 
 .navbar .copy-wrap {
@@ -407,7 +414,13 @@ section + section {
 
 @media (min-width: 768px) {
   .navbar-brand img {
-    max-width: 100%;
+    max-width: 53%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-brand img {
+    max-width: 60%;
   }
 }
 
@@ -1312,7 +1325,15 @@ textarea.form-control {
   }
 }
 .logo-footer {
-  max-width: 436px;
+  max-width: 320px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .logo-footer {
+    max-width: 420px;
+    margin: 0;
+  }
 }
 
 .links-map {
@@ -1636,7 +1657,34 @@ input.is-invalid + .invalid-feedback {
   font-family: var(--additional-font-family);
   line-height: 1.17;
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
+}
+
+@media (min-width: 1280px) {
+  .star-rating {
+    height: 30px;
+    width: 150px;
+  }
+
+  .star-rating:before {
+    background-size: 30px;
+    height: 30px;
+    width: 150px;
+  }
+
+  .star-rating > span {
+    width: 150px;
+    height: 30px;
+  }
+
+  .star-rating > span:before {
+    background-size: 30px;
+    height: 30px;
+  }
+
+  .badge-total-reviews {
+    font-size: 12px;
+  }
 }
 
 .badge-total-reviews:not(:first-child) {
