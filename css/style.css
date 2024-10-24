@@ -151,6 +151,7 @@ b,
 strong {
   font-weight: bold;
   letter-spacing: 0;
+  font-weight: 700;
 }
 
 img {
@@ -1401,7 +1402,7 @@ input.is-invalid + .invalid-feedback {
 
 /* WIDGET REVIEW */
 
-.widget iframe span.tp-widget-logo {
+/* .widget iframe span.tp-widget-logo {
   margin: 0 auto 8px !important;
 }
 
@@ -1411,13 +1412,13 @@ input.is-invalid + .invalid-feedback {
     min-width: 75% !important;
     margin: 15px auto !important;
   }
-}
+} */
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .widget iframe {
     max-width: 80% !important;
   }
-}
+} */
 
 .kOpUPX {
   height: 100px !important;
@@ -1436,4 +1437,120 @@ input.is-invalid + .invalid-feedback {
 
 .Icon__IconContainer-sc-11wrh3u-0 svg {
   opacity: 0 !important;
+}
+
+/* ------WIDGET TPolit--------- */
+
+.tp-widget-profile-link {
+  display: block;
+  padding: 4px;
+  text-align: left;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .tp-widget-profile-link {
+    width: 85%;
+  }
+}
+
+@media (max-width: 767px) {
+  .widget {
+    width: 100%;
+  }
+
+  .tp-widget-wrapper {
+    margin: 15px auto !important;
+  }
+
+  .tp-widget-profile-link {
+    width: 35%;
+  }
+}
+
+.tp-widget-profile-link:hover {
+  color: #011928;
+  text-decoration-color: #011928;
+  text-decoration: none;
+}
+
+.tp-widget-logo {
+  display: block;
+  margin: 0 0 8px;
+  width: 55%;
+}
+
+.tp-widget-stars {
+  display: block;
+  margin: 0 0 8px;
+  width: 96%;
+}
+
+svg {
+  display: block;
+  width: 100%;
+}
+
+.tp-stars--4--half .tp-star:nth-of-type(-n + 4) .tp-star__canvas,
+.tp-stars--4--half .tp-star:nth-of-type(-n + 4) .tp-star__canvas--half {
+  fill: #00b67a;
+}
+
+.tp-stars--4--half .tp-star:nth-of-type(-n + 5) .tp-star__canvas--half {
+  fill: #00b67a;
+}
+
+.tp-stars .tp-star__canvas,
+.tp-stars .tp-star__canvas--half {
+  fill: #dcdce6;
+}
+
+.tp-stars .tp-star__shape {
+  fill: #fff;
+}
+
+.tp-widget-businessinfo {
+  font-size: 11px;
+  line-height: 1.2;
+  display: block;
+  font-family: var(--additional-font-family);
+}
+
+.tp-widget-businessinfo__trustscore,
+.tp-widget-businessinfo__total {
+  text-transform: none;
+  display: inline-block;
+  padding-right: 2px;
+}
+
+.tp-widget-logo-svg {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 24.6031746031746%;
+}
+
+.tp-widget-logo-svg svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.tp-widget-stars-svg {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 18.326693227091635%;
+}
+
+.tp-widget-stars-svg svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
