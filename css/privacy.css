@@ -305,6 +305,8 @@ section + section {
 
 /* SECTION NAVBAR */
 
+/* SECTION NAVBAR */
+
 .navbar {
   padding: 15px 0;
   top: 0;
@@ -313,7 +315,7 @@ section + section {
   background: transparent;
   transition: all 0.5s ease-in-out;
   z-index: 10;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -325,7 +327,6 @@ section + section {
 .navbar.scrolled {
   padding: 6px 0;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
   z-index: 100;
 }
@@ -336,13 +337,24 @@ section + section {
   }
 }
 
+.navbar-brand img {
+  max-width: 80%;
+  transition: max-width 0.5s;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img {
+    max-width: 375px;
+  }
+}
+
 .navbar.scrolled .navbar-brand img {
   max-width: 80%;
 }
 
 @media (min-width: 768px) {
   .navbar.scrolled .navbar-brand img {
-    max-width: 50%;
+    max-width: 340px;
   }
 }
 
@@ -385,11 +397,6 @@ section + section {
   padding: 16px 0;
 }
 
-.navbar .container {
-  width: 100%;
-  max-width: 100%;
-}
-
 .navbar.show .nav-top {
   box-shadow: 0px 2px 6px 0px #0000001a;
   padding: 0.5rem 1rem;
@@ -403,23 +410,6 @@ section + section {
 .navbar-brand {
   padding: 0;
   margin: 0;
-}
-
-.navbar-brand img {
-  max-width: 80%;
-  transition: max-width 0.5s;
-}
-
-@media (min-width: 768px) {
-  .navbar-brand img {
-    max-width: 53%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbar-brand img {
-    max-width: 60%;
-  }
 }
 
 .nav-item .nav-link {
