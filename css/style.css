@@ -1486,10 +1486,10 @@ input.is-invalid + .invalid-feedback {
   width: 96%;
 }
 
-svg {
+/* svg {
   display: block;
   width: 100%;
-}
+} */
 
 .tp-stars--4--half .tp-star:nth-of-type(-n + 4) .tp-star__canvas,
 .tp-stars--4--half .tp-star:nth-of-type(-n + 4) .tp-star__canvas--half {
