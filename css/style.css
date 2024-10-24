@@ -1426,7 +1426,7 @@ input.is-invalid + .invalid-feedback {
   }
 
   .tp-widget-profile-link {
-    width: 35%;
+    width: 65%;
   }
 }
 
