@@ -304,11 +304,26 @@ section + section {
 }
 
 /* SECTION NAVBAR */
+
 .navbar {
+  padding: 15px 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+}
+
 .navbar.scrolled {
+  padding: 6px 0;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
@@ -323,27 +338,16 @@ section + section {
 
 .navbar.scrolled .navbar-brand img {
   max-width: 80%;
-  transition: max-width 0.5s;
+}
+
+@media (min-width: 768px) {
+  .navbar.scrolled .navbar-brand img {
+    max-width: 50%;
+  }
 }
 
 .navbar.scrolled .addittional-btn {
   padding: 8px;
-}
-
-.navbar {
-  padding: 15px 0;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  background: transparent;
-  transition: all 0.5s ease-in-out;
-  z-index: 10;
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
 }
 
 .navbar .copy-wrap {
@@ -383,6 +387,7 @@ section + section {
 
 .navbar .container {
   width: 100%;
+  max-width: 100%;
 }
 
 .navbar.show .nav-top {
@@ -407,7 +412,13 @@ section + section {
 
 @media (min-width: 768px) {
   .navbar-brand img {
-    max-width: 100%;
+    max-width: 53%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-brand img {
+    max-width: 60%;
   }
 }
 
@@ -517,6 +528,14 @@ section + section {
 
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
+}
+
+.main-nav-screen {
+  background-image: url(../img/img_desc/main_img.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .navbar .btn.addittional-btn {
