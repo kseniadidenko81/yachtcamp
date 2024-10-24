@@ -152,6 +152,21 @@ $(function () {
   });
 });
 
+//  Go to page
+$(function () {
+  $(".navbar-nav .nav-link").on("click", function (event) {
+    event.preventDefault();
+
+    var targetPage = $(this).attr("href");
+
+    if (targetPage !== "#") {
+      window.location.href = targetPage;
+    }
+  });
+});
+
+// SWIPER
+
 var swiper1 = new Swiper(".swiper1", {
   autoHeight: true,
   slidesPerView: 1,
