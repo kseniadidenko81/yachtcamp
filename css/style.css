@@ -301,12 +301,16 @@ section + section {
   z-index: 1;
 }
 
+#content {
+  padding-top: 0;
+}
+
 /* SECTION NAVBAR */
 
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.5s;
+  transition: all 0.5s ease-in-out;
   z-index: 100;
 }
 
@@ -397,6 +401,7 @@ section + section {
 
 .navbar-brand img {
   max-width: 80%;
+  transition: max-width 0.5s;
 }
 
 @media (min-width: 768px) {
@@ -1142,11 +1147,11 @@ section + section {
 }
 
 .fqs-header {
-font-size: 18px;
-    padding: 16px 34px 16px 28px;
-    font-weight: 600;
-    cursor: pointer;
-    position: relative;
+  font-size: 18px;
+  padding: 16px 24px 16px 28px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -1156,17 +1161,17 @@ font-size: 18px;
 }
 
 .fqs-header::after {
-    top: 50%;
-    right: 10px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-chevron-down accordion-item-header-icon'%3E%3Cpath d='m6 9 6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    content: "";
-    position: absolute;
-    transition: transform 0.5s;
-    margin-top: -10px;
+  top: 50%;
+  right: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-chevron-down accordion-item-header-icon'%3E%3Cpath d='m6 9 6 6 6-6'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  transition: transform 0.5s;
+  margin-top: -10px;
 }
 
 .fqs-header.active::after {
