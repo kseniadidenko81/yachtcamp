@@ -41,7 +41,7 @@ $(function () {
   $(function () {
     function adjustContentPadding() {
       var navbarHeight = $("#navbar").outerHeight();
-      var extraPadding = 16;
+      var extraPadding = 0;
       $("#content").css("padding-top", navbarHeight + extraPadding + "px");
     }
 
