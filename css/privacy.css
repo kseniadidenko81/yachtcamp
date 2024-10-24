@@ -408,6 +408,7 @@ section + section {
 
 .navbar-brand img {
   max-width: 80%;
+  transition: max-width 0.5s;
 }
 
 @media (min-width: 768px) {
