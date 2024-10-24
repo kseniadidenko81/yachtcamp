@@ -1412,7 +1412,7 @@ input.is-invalid + .invalid-feedback {
 
 @media (min-width: 992px) {
   .tp-widget-profile-link {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -1468,10 +1468,22 @@ input.is-invalid + .invalid-feedback {
 }
 
 .tp-widget-businessinfo {
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.2;
   display: block;
   font-family: var(--additional-font-family);
+}
+
+@media (max-width: 992px) {
+  .tp-widget-businessinfo {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 560px) {
+  .tp-widget-businessinfo {
+    font-size: 13px;
+  }
 }
 
 .tp-widget-businessinfo__trustscore,
