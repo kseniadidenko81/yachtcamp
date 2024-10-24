@@ -316,7 +316,7 @@ section + section {
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.5s;
+  transition: all 0.5s ease-in-out;
   z-index: 100;
 }
 
@@ -328,6 +328,7 @@ section + section {
 
 .navbar.scrolled .navbar-brand img {
   max-width: 80%;
+  transition: max-width 0.5s;
 }
 
 .navbar.scrolled .addittional-btn {
