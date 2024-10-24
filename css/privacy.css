@@ -65,11 +65,13 @@ h1 {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 48px;
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 64px;
+    line-height: 78px;
   }
 }
 
