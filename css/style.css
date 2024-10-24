@@ -1406,7 +1406,6 @@ input.is-invalid + .invalid-feedback {
 
 .tp-widget-profile-link {
   display: block;
-  padding: 4px;
   text-align: left;
   width: 100%;
 }
