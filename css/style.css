@@ -1441,7 +1441,7 @@ input.is-invalid + .invalid-feedback {
 .tp-widget-logo {
   display: block;
   margin: 0 0 8px;
-  width: 65%;
+  width: 60%;
 }
 
 .tp-widget-stars {
