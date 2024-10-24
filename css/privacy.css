@@ -146,12 +146,8 @@ p + p {
   }
 }
 
-ol {
-  font-family: var(--additional-font-family);
-}
-
 ol li span {
-  font-family: var(--base-font-family);
+  font-family: var(--additional-font-family);
 }
 
 ol li + li {
