@@ -341,7 +341,7 @@ section + section {
 }
 
 .navbar-brand img {
-  max-width: 80%;
+  max-width: 70%;
   transition: max-width 0.5s;
 }
 
@@ -352,7 +352,7 @@ section + section {
 }
 
 .navbar.scrolled .navbar-brand img {
-  max-width: 80%;
+  max-width: 65%;
 }
 
 @media (min-width: 768px) {
