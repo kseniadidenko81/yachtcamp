@@ -347,7 +347,7 @@ section + section {
 
 @media (min-width: 768px) {
   .navbar-brand img {
-    max-width: 375px;
+    max-width: 293px;
   }
 }
 
@@ -357,7 +357,7 @@ section + section {
 
 @media (min-width: 768px) {
   .navbar.scrolled .navbar-brand img {
-    max-width: 340px;
+    max-width: 280px;
   }
 }
 
