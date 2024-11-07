@@ -991,23 +991,62 @@ nav .addittional-btn {
   bottom: 0;
 }
 
-.read-more,
-.read-less {
+.instrSwiper .read-more,
+.instrSwiper .read-less {
   display: none;
 }
 
 @media (max-width: 991px) {
-  .read-more-target {
+  .instrSwiper .read-more-target {
     display: none;
   }
 
-  .read-more,
-  .read-less {
-    position: absolute;
+  .instrSwiper .read-more,
+  .instrSwiper .read-less {
+    /* position: absolute;
     right: 0px;
-    bottom: -16px;
+    bottom: -16px; */
     text-decoration: underline;
+    /* display: block; */
+
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  .instrSwiper .read-more-wrap {
+    position: relative;
+  }
+
+  .instrSwiper .read-more,
+  .instrSwiper .read-less {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    text-align: end;
+  }
+
+  .instrSwiper .read-more-wrap {
+    position: relative;
+  }
+
+  .instrSwiper .read-more-target {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .instrSwiper .read-more-target.slide-down {
     display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .instrSwiper .swiper-button-next,
+  .instrSwiper .swiper-button-prev {
+    z-index: 10;
   }
 }
 
