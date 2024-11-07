@@ -398,7 +398,7 @@ nav .addittional-btn {
   width: 100%;
   z-index: 2;
   background: transparent;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   z-index: 10;
 }
 
@@ -418,7 +418,7 @@ nav .addittional-btn {
   padding: 6px 15px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   z-index: 100;
 }
 
@@ -563,6 +563,29 @@ nav .addittional-btn {
   margin: auto;
   text-align: center;
   background: #fff;
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    position: relative;
+    z-index: 2;
+  }
+
+  .navbar-collapse {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .navbar-toggler:focus {
