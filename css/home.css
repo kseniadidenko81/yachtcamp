@@ -1,16 +1,52 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
-    url("../fonts/Poppins-Regular.woff") format("woff");
-  font-weight: normal;
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: normal;
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -55,20 +91,10 @@ nav .container {
 
 /* TYPOGRAPHY */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-  line-height: normal;
-}
-
 h1 {
   font-family: var(--additional-font-family);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 46px;
 }
@@ -85,6 +111,7 @@ h2 {
   font-size: 32px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -94,24 +121,33 @@ h2 {
   }
 }
 
-h3 {
-  font-size: 22px;
-  font-family: var(--base-font-family);
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: var(--additional-font-family);
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
-  h3 {
-    font-size: 36px;
+  h3,
+  .h3 {
+    font-size: 40px;
+    line-height: 60px;
   }
 }
 
-h4 {
-  font-size: 22px;
+h4,
+.h4 {
+  font-size: 20px;
+  font-family: var(--additional-font-family);
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
+  h4,
   h4 {
-    font-size: 36px;
+    font-size: 20px;
   }
 }
 
@@ -120,6 +156,7 @@ h5,
   font-size: 24px;
   line-height: 36px;
   font-family: var(--base-font-family);
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -134,7 +171,7 @@ h6,
 .h6 {
   font-size: 22px;
   line-height: 28px;
-  font-family: var(--additional-font-family);
+  font-family: var(--base-font-family);
   font-weight: 600;
 }
 
@@ -142,12 +179,14 @@ h6,
   h6,
   .h6 {
     font-size: 26px;
+    font-weight: 500;
   }
 }
 
 p {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -243,8 +282,19 @@ a:focus-visible {
   outline: none;
 }
 
+.fw-bold {
+  font-weight: 600 !important;
+}
+.bottom-link {
+  font-family: var(--additional-font-family);
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .link-underline-dark {
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .mt-5 {
@@ -292,15 +342,6 @@ a:focus-visible {
     padding: 80px 0;
   }
 }
-/* section {
-  padding: 36px 0;
-}
-
-@media (min-width: 768px) {
-  section {
-    padding: 48px 0;
-  }
-} */
 
 .text-bg-secondary {
   color: #011928 !important;
@@ -314,7 +355,6 @@ a:focus-visible {
 
 .badge {
   border-radius: 20px !important;
-  /* font-size: 15px !important; */
   line-height: 18px !important;
   font-weight: 400 !important;
   padding: 8px 12px !important;
@@ -324,13 +364,13 @@ a:focus-visible {
 
 .custom-btn,
 .addittional-btn {
-  font-family: var(--base-font-family);
+  font-family: var(--additional-font-family);
   background: #b28224;
   border-radius: 8px;
   color: #fff;
   font-size: 26px;
   line-height: 26px;
-  font-weight: bolder;
+  font-weight: 700;
   white-space: nowrap;
   padding: 20px 26px;
   width: 100%;
@@ -339,6 +379,10 @@ a:focus-visible {
   transition: all 0.3s ease;
   align-items: center;
   justify-content: center;
+}
+
+.custom-btn {
+  font-family: var(--base-font-family);
 }
 
 @media (min-width: 992px) {
@@ -370,7 +414,7 @@ nav .addittional-btn {
     max-width: 180px;
     min-width: 120px;
     margin-left: 16px;
-    font-weight: 600;
+    font-weight: 700;
   }
 }
 
@@ -474,6 +518,7 @@ nav .addittional-btn {
 
 .navbar .copy-wrap {
   font-size: 16px;
+  font-weight: 500;
 }
 
 .navbar.show {
@@ -538,7 +583,7 @@ nav .addittional-btn {
   display: block;
   color: #011928;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   padding: 0;
   border-bottom: 1px solid transparent;
@@ -582,6 +627,10 @@ nav .addittional-btn {
   margin: auto;
   text-align: center;
   background: #fff;
+}
+
+.navbar-collapse.show .nav-item .fw-bold {
+  font-family: var(--base-font-family);
 }
 
 @media (max-width: 991px) {
@@ -677,7 +726,6 @@ nav .addittional-btn {
   font-family: var(--base-font-family);
   font-size: 16px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 /* SECTION MAIN */
@@ -744,6 +792,8 @@ nav .addittional-btn {
 .text-with-line {
   position: relative;
   display: inline-block;
+  font-family: var(--additional-font-family);
+  font-weight: 400;
 }
 
 .text-with-line::after {
@@ -786,6 +836,10 @@ nav .addittional-btn {
   background: #011928;
 }
 
+.section-advantage h2 {
+  font-weight: 600;
+}
+
 .cards-advantage {
   display: grid;
   column-gap: 40px;
@@ -799,26 +853,21 @@ nav .addittional-btn {
   }
 }
 
+.cards-advantage p {
+  font-weight: 500;
+}
+
 .cards-advantage .h6 {
   font-size: 20px;
 }
 
 /* SECTION ABOUT US */
-.section-about h6 {
+.section-about h2 {
+  font-weight: 600;
+}
+
+.section-about h4 {
   font-family: var(--base-font-family);
-  font-size: 20px;
-}
-
-.section-about h3 {
-  font-size: 24px;
-  line-height: 36px;
-}
-
-@media (min-width: 768px) {
-  .section-about h3 {
-    font-size: 40px;
-    line-height: 60px;
-  }
 }
 
 .grid-section {
@@ -849,6 +898,10 @@ nav .addittional-btn {
     gap: 42px;
     padding-top: 80px;
   }
+}
+
+.timeline-container h2 {
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -1114,6 +1167,7 @@ nav .addittional-btn {
 
 .section-courses .read-more-btn {
   font-family: var(--additional-font-family);
+  font-weight: 500;
   font-size: 20px;
   line-height: 30px;
   width: 100%;
@@ -1134,6 +1188,10 @@ nav .addittional-btn {
 .section-courses .read-more-btn:hover {
   border: none;
   color: #b28224;
+}
+
+.section-courses .addittional-btn {
+  font-weight: 600;
 }
 
 /* SECTION CITATION */
@@ -1435,6 +1493,7 @@ nav .addittional-btn {
   transition: border 0.25s ease-in-out;
   height: 60px;
   overflow: hidden;
+  font-weight: 600;
 }
 
 .section-contact-form .hidden-label {
@@ -1497,8 +1556,10 @@ textarea.form-control {
 }
 
 /* SECTION FOOTER */
-.section-footer {
-  /* background: #efedeb; */
+
+.section-footer h2 {
+  font-family: var(--additional-font-family);
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -1518,9 +1579,10 @@ textarea.form-control {
 }
 
 .links-map {
+  font-family: var(--base-font-family);
+  font-weight: 500;
   list-style: none;
   padding-inline-start: 0;
-  font-size: 20px;
 }
 
 .links-contact {
@@ -1867,6 +1929,13 @@ input.is-invalid + .invalid-feedback {
   padding: 34px 32px 24px;
 }
 
+.modal-header h6 {
+  font-family: var(--additional-font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
 .modal-body {
   padding: 0 32px 32px;
 }
@@ -1895,10 +1964,6 @@ textarea.form-control {
 
   textarea.form-control {
     height: 80px !important;
-  }
-
-  .modal-header h6 {
-    font-size: 24px;
   }
 }
 
@@ -1960,8 +2025,8 @@ textarea.form-control {
 }
 
 .modal .close {
-  right: 4px;
-  top: 4px;
+  right: 0;
+  top: 0;
   border: none;
   background: transparent;
   color: #fff;
