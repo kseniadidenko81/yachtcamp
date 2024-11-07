@@ -723,7 +723,7 @@ nav .addittional-btn {
 }
 
 .navbar .btn.addittional-btn {
-  font-family: var(--base-font-family);
+  font-family: var(--additional-font-family);
   font-size: 16px;
   line-height: 26px;
 }
