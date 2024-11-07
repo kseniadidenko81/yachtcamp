@@ -780,6 +780,10 @@ nav .addittional-btn {
   }
 }
 
+.cards-advantage .h6 {
+  font-size: 20px;
+}
+
 /* SECTION ABOUT US */
 .section-about h6 {
   font-family: var(--base-font-family);
