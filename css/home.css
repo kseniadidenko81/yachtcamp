@@ -269,14 +269,12 @@ a:active {
 }
 
 section {
-  padding: 24px 0;
-  /* margin-top: 12px; */
+  padding: 36px 0;
 }
 
 @media (min-width: 768px) {
   section {
-    padding: 28px 0;
-    /* margin-top: 48px; */
+    padding: 48px 0;
   }
 }
 
@@ -652,7 +650,7 @@ nav .addittional-btn {
 }
 
 .content-section {
-  padding: 0 0 28px;
+  padding: 0 0 48px;
 }
 
 @media (max-width: 767px) {
@@ -660,7 +658,7 @@ nav .addittional-btn {
     max-width: 100%;
     padding: 0;
     overflow: hidden;
-    padding: 0 0 24px;
+    padding: 0 0 36px;
   }
 
   .content-section .order-2 {
@@ -857,6 +855,7 @@ nav .addittional-btn {
 @media (min-width: 768px) {
   .timeline-content {
     margin-left: 40px;
+    margin-bottom: 24px;
     margin-top: 8px;
   }
 }
