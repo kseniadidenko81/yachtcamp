@@ -165,52 +165,7 @@ $(function () {
 });
 
 // READ MORE/LESS TEXT
-// $(function () {
-//   $(document).ready(function () {
-//     let swiper = new Swiper(".instrSwiper", {
-//       slidesPerView: 1,
-//       loop: true,
-//       speed: 350,
-//       spaceBetween: 20,
-//       centeredSlides: true,
-//       autoHeight: true,
 
-//       navigation: {
-//         nextEl: ".swiper-button-next",
-//         prevEl: ".swiper-button-prev",
-//       },
-//     });
-
-//     $(".read-more").on("click", function () {
-//       let $target = $(this)
-//         .siblings(".read-more-wrap")
-//         .find(".read-more-target");
-
-//       $(".read-less").remove();
-//       $(".read-more").show();
-
-//       $target.stop(true).slideDown(500, "swing", () => {
-//         swiper.update();
-//       });
-
-//       $(this).hide();
-//       $(this).after('<span class="read-less">Read Less</span>');
-//     });
-
-//     $(document).on("click", ".read-less", function () {
-//       let $target = $(this)
-//         .siblings(".read-more-wrap")
-//         .find(".read-more-target");
-
-//       $target.stop(true).slideUp(500, "swing", () => {
-//         swiper.update();
-//       });
-
-//       $(".read-more").show();
-//       $(this).remove();
-//     });
-//   });
-// });
 $(function () {
   $(document).ready(function () {
     let swiper = new Swiper(".instrSwiper", {
