@@ -1,16 +1,52 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
-    url("../fonts/Poppins-Regular.woff") format("woff");
-  font-weight: normal;
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: normal;
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -55,22 +91,12 @@ nav .container {
 
 /* TYPOGRAPHY */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-  line-height: normal;
-}
-
 h1 {
   font-family: var(--additional-font-family);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
-  line-height: 68px;
+  line-height: 46px;
 }
 
 @media (min-width: 768px) {
@@ -85,6 +111,7 @@ h2 {
   font-size: 32px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -94,24 +121,33 @@ h2 {
   }
 }
 
-h3 {
-  font-size: 22px;
-  font-family: var(--base-font-family);
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: var(--additional-font-family);
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
-  h3 {
-    font-size: 36px;
+  h3,
+  .h3 {
+    font-size: 40px;
+    line-height: 60px;
   }
 }
 
-h4 {
-  font-size: 22px;
+h4,
+.h4 {
+  font-size: 20px;
+  font-family: var(--additional-font-family);
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
+  h4,
   h4 {
-    font-size: 36px;
+    font-size: 20px;
   }
 }
 
@@ -120,6 +156,7 @@ h5,
   font-size: 24px;
   line-height: 36px;
   font-family: var(--base-font-family);
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -134,7 +171,7 @@ h6,
 .h6 {
   font-size: 22px;
   line-height: 28px;
-  font-family: var(--additional-font-family);
+  font-family: var(--base-font-family);
   font-weight: 600;
 }
 
@@ -142,12 +179,14 @@ h6,
   h6,
   .h6 {
     font-size: 26px;
+    font-weight: 500;
   }
 }
 
 p {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
@@ -164,6 +203,7 @@ p + p {
 
 ol li span {
   font-family: var(--additional-font-family);
+  font-weight: 500;
 }
 
 ol li + li {
@@ -182,6 +222,14 @@ b,
 strong {
   font-weight: bold;
   letter-spacing: 0;
+}
+
+.fw-bold {
+  font-weight: 600 !important;
+}
+
+.fw-light-bold {
+  font-weight: 500;
 }
 
 img {
@@ -490,6 +538,7 @@ nav .addittional-btn {
 
 .navbar .copy-wrap {
   font-size: 16px;
+  font-family: var(--additional-font-family);
 }
 
 .navbar.show {
@@ -524,6 +573,10 @@ nav .addittional-btn {
   padding: 16px 0;
 }
 
+.navbar.show .nav-bottom li {
+  font-family: var(--additional-font-family);
+}
+
 .navbar.show .nav-top {
   box-shadow: 0px 2px 6px 0px #0000001a;
   padding: 0.5rem 1rem;
@@ -554,7 +607,7 @@ nav .addittional-btn {
   display: block;
   color: #011928;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   padding: 0;
   border-bottom: 1px solid transparent;
