@@ -70,13 +70,13 @@ h1 {
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 46px;
+  line-height: 68px;
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 52px;
-    line-height: 46px;
+    line-height: 68px;
   }
 }
 
@@ -272,10 +272,6 @@ a:active {
   text-decoration-color: #b28224 !important;
 }
 
-a:focus-visible {
-  outline: none;
-}
-
 .link-underline-dark {
   text-decoration: underline;
 }
@@ -307,14 +303,12 @@ a:focus-visible {
 }
 
 section {
-  padding: 24px 0;
-  /* margin-top: 12px; */
+  padding: 36px 0;
 }
 
 @media (min-width: 768px) {
   section {
-    padding: 28px 0;
-    /* margin-top: 48px; */
+    padding: 24px 0;
   }
 }
 
@@ -433,7 +427,7 @@ nav .addittional-btn {
   width: 100%;
   z-index: 2;
   background: transparent;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   z-index: 10;
 }
 
@@ -453,7 +447,7 @@ nav .addittional-btn {
   padding: 6px 20px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease;
   z-index: 100;
 }
 
@@ -604,6 +598,29 @@ nav .addittional-btn {
   margin: auto;
   text-align: center;
   background: #fff;
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    position: relative;
+    z-index: 2;
+  }
+
+  .navbar-collapse {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 .navbar-toggler:focus {
