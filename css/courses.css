@@ -238,6 +238,10 @@ a:active {
   text-decoration-color: #b28224 !important;
 }
 
+a:focus-visible {
+  outline: none;
+}
+
 .link-underline-dark {
   text-decoration: underline;
 }
