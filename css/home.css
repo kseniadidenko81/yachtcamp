@@ -787,6 +787,7 @@ nav .addittional-btn {
 /* SECTION ABOUT US */
 .section-about h6 {
   font-family: var(--base-font-family);
+  font-size: 20px;
 }
 
 .grid-section {
