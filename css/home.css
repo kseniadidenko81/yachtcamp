@@ -1833,7 +1833,7 @@ textarea.form-control {
   justify-content: center;
   height: 100vh;
   max-width: 830px;
-  transform: translateX(-52%);
+  transform: translateX(-50%);
   width: 100%;
 }
 
