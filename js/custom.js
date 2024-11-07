@@ -168,12 +168,11 @@ $(function () {
 $(function () {
   $(document).ready(function () {
     let swiper = new Swiper(".instrSwiper", {
-      autoHeight: true,
       slidesPerView: 1,
       loop: true,
-      speed: 600,
-      grabCursor: true,
+      speed: 350,
       spaceBetween: 20,
+      centeredSlides: true,
 
       navigation: {
         nextEl: ".swiper-button-next",
@@ -186,7 +185,7 @@ $(function () {
         .siblings(".read-more-wrap")
         .find(".read-more-target");
 
-      $target.slideDown(() => {
+      $target.stop(true).slideDown(500, "swing", () => {
         swiper.update();
       });
 
@@ -199,7 +198,7 @@ $(function () {
         .siblings(".read-more-wrap")
         .find(".read-more-target");
 
-      $target.slideUp(() => {
+      $target.stop(true).slideUp(500, "swing", () => {
         swiper.update();
       });
 
