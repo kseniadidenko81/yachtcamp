@@ -273,7 +273,26 @@ a:focus-visible {
   }
 }
 
-section {
+.section-dark {
+  padding: 24px 0;
+}
+
+@media (min-width: 768px) {
+  .section-dark {
+    padding: 28px 0;
+  }
+}
+
+.section-light {
+  padding: 46px 0;
+}
+
+@media (min-width: 768px) {
+  .section-light {
+    padding: 80px 0;
+  }
+}
+/* section {
   padding: 36px 0;
 }
 
@@ -281,7 +300,7 @@ section {
   section {
     padding: 48px 0;
   }
-}
+} */
 
 .text-bg-secondary {
   color: #011928 !important;
@@ -821,12 +840,14 @@ nav .addittional-btn {
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
+  padding-top: 46px;
 }
 
 @media (min-width: 768px) {
   .timeline-container {
     flex-direction: row;
     gap: 42px;
+    padding-top: 80px;
   }
 }
 
