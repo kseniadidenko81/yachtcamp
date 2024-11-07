@@ -790,8 +790,16 @@ nav .addittional-btn {
   font-size: 20px;
 }
 
-.section-about h2 {
-  text-transform: none;
+.section-about h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@media (min-width: 768px) {
+  .section-about h3 {
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
 
 .grid-section {
@@ -940,14 +948,9 @@ nav .addittional-btn {
 @media (min-width: 992px) {
   .section-instructors .grid-section {
     grid-template-columns: 1.8fr 1.2fr;
+    column-gap: 96px;
   }
 }
-
-/* @media (min-width: 1280px) {
-  .section-instructors .grid-item {
-    max-width: 578px;
-  }
-} */
 
 .radius-img {
   border-radius: 4px;
