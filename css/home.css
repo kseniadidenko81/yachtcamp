@@ -1825,7 +1825,7 @@ textarea.form-control {
 
 .modal.show .modal-dialog {
   padding: 12px;
-  margin: 0;
+  margin: 0.5rem 0;
   top: 0;
   left: 50%;
   position: absolute;
