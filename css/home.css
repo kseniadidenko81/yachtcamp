@@ -1839,7 +1839,6 @@ textarea.form-control {
 
 @media (min-width: 768px) {
   .modal.show .modal-dialog {
-    width: 75vh;
     transform: translate(-50%, 0%);
   }
 }
