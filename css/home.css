@@ -653,29 +653,6 @@ nav .addittional-btn {
   border-radius: 12px;
 }
 
-@media (min-width: 992px) {
-  .main-section .picture-container {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-section .picture-container {
-    height: 50vh;
-  }
-}
-
-@media (min-width: 1025px) {
-  .main-section .picture-container {
-    height: 80vh;
-  }
-}
-
-.main-section picture img {
-  object-fit: cover;
-  height: 100%;
-}
-
 .content-section {
   padding: 0 0 48px;
 }
