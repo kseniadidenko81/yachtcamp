@@ -639,7 +639,7 @@ nav .addittional-btn {
   font-family: var(--additional-font-family);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main-section {
     margin-top: 82px;
   }
@@ -649,9 +649,21 @@ nav .addittional-btn {
   border-radius: 12px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main-section .picture-container {
     height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-section .picture-container {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-section .picture-container {
+    height: 80vh;
   }
 }
 
@@ -664,7 +676,7 @@ nav .addittional-btn {
   padding: 0 0 48px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .content-section {
     max-width: 100%;
     padding: 0;
@@ -694,7 +706,7 @@ nav .addittional-btn {
   gap: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main-icon-items {
     max-width: 444px;
   }
@@ -715,7 +727,7 @@ nav .addittional-btn {
   background-color: #324149;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .text-with-line::after {
     right: 0;
   }
@@ -733,7 +745,7 @@ nav .addittional-btn {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .count-item {
     font-size: 30px;
   }
