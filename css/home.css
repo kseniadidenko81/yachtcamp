@@ -1848,7 +1848,6 @@ textarea.form-control {
   .modal.show .modal-dialog {
     width: 830px;
     margin: 0.5rem;
-    height: auto;
   }
 }
 
