@@ -782,20 +782,6 @@ nav .addittional-btn {
     flex-direction: row;
     gap: 42px;
   }
-
-  .timeline-container:after {
-    content: "";
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: translateX(-50%);
-    background-image: url(../img/home/rope_icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 230px;
-    width: 230px;
-    height: 230px;
-  }
 }
 
 @media (min-width: 768px) {
