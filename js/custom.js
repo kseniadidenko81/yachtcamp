@@ -55,27 +55,21 @@ $(function () {
   });
 
   $(function () {
-    // Обрабатываем отправку формы
     $("#contact-form").on("submit", function (event) {
-      event.preventDefault(); // Предотвращаем стандартную отправку формы
+      event.preventDefault();
 
       var $phoneInput = $("#phone");
 
-      // Проверяем, есть ли введенные данные и соответствует ли шаблону
       if ($phoneInput.val() && !$phoneInput[0].checkValidity()) {
         $phoneInput.addClass("is-invalid");
       } else {
         $phoneInput.removeClass("is-invalid");
-
-        // Здесь вы можете добавить код для отправки формы через AJAX или другой метод
       }
     });
 
-    // Отслеживаем изменение или ввод в поле телефона
     $("#phone").on("input", function () {
       var $phoneInput = $(this);
 
-      // Если пользователь вводит данные или изменяет уже автозаполненное поле
       if ($phoneInput.val() && !$phoneInput[0].checkValidity()) {
         $phoneInput.addClass("is-invalid");
       } else {
@@ -86,17 +80,22 @@ $(function () {
 
   $(function () {
     $("#contact-form").on("submit", function (event) {
-      event.preventDefault(); // Отключаем стандартное поведение формы (перезагрузку страницы)
+      event.preventDefault();
 
       $("#response-message")
         .fadeIn(500)
         .text("Thank you! Your message has been sent. We will contact you.");
 
+      $("#submit-btn").html(
+        '<span class="check-icon"></span> <span class="text-button">Sent</span>'
+      );
+
       setTimeout(function () {
         $("#response-message").fadeOut(500);
+
+        $("#submit-btn").html("Send");
       }, 15000);
 
-      // Можно очистить поля формы, если это нужно
       $(this).trigger("reset");
     });
   });
@@ -162,6 +161,67 @@ $(function () {
     if (targetPage !== "#") {
       window.location.href = targetPage;
     }
+  });
+});
+
+// READ MORE/LESS TEXT
+$(function () {
+  $(document).ready(function () {
+    let swiper = new Swiper(".instrSwiper", {
+      autoHeight: true,
+      slidesPerView: 1,
+      loop: true,
+      speed: 600,
+      grabCursor: true,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    $(".read-more").on("click", function () {
+      let $target = $(this)
+        .siblings(".read-more-wrap")
+        .find(".read-more-target");
+
+      $target.slideDown(() => {
+        swiper.update();
+      });
+
+      $(this).hide();
+      $(this).after('<span class="read-less">Read Less</span>');
+    });
+
+    $(document).on("click", ".read-less", function () {
+      let $target = $(this)
+        .siblings(".read-more-wrap")
+        .find(".read-more-target");
+
+      $target.slideUp(() => {
+        swiper.update();
+      });
+
+      $(".read-more").show();
+      $(this).remove();
+    });
+  });
+});
+
+// MODAL FORM
+
+$(function () {
+  $("#subs-form").on("submit", function (e) {
+    e.preventDefault();
+    $(this)[0].reset();
+    $("#susbc-form").modal("hide");
+    $("#susbc-form-thank").modal("show");
+
+    $("body").addClass("modal-open");
+  });
+
+  $("#susbc-form, #susbc-form-thank").on("hidden.bs.modal", function () {
+    $("body").removeClass("modal-open");
   });
 });
 
