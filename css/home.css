@@ -295,7 +295,7 @@ section {
 
 .badge {
   border-radius: 20px !important;
-/*   font-size: 15px !important; */
+  /* font-size: 15px !important; */
   line-height: 18px !important;
   font-weight: 400 !important;
   padding: 8px 12px !important;
@@ -943,7 +943,7 @@ nav .addittional-btn {
   .read-less {
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    bottom: -16px;
     text-decoration: underline;
     display: block;
   }
