@@ -667,6 +667,12 @@ nav .addittional-btn {
 
 @media (min-width: 1025px) {
   .main-section .picture-container {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-section .picture-container {
     height: 80vh;
   }
 }
