@@ -70,13 +70,13 @@ h1 {
   font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
-  line-height: 68px;
+  line-height: 46px;
 }
 
 @media (min-width: 768px) {
   h1 {
     font-size: 52px;
-    line-height: 68px;
+    line-height: 46px;
   }
 }
 
@@ -238,10 +238,6 @@ a:active {
   text-decoration-color: #b28224 !important;
 }
 
-a:focus-visible {
-  outline: none;
-}
-
 .link-underline-dark {
   text-decoration: underline;
 }
@@ -284,7 +280,7 @@ a:focus-visible {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
@@ -659,7 +655,7 @@ nav .addittional-btn {
   max-width: 880px;
   position: relative;
   z-index: 10;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hero-text p {
