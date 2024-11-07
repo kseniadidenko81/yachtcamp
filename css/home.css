@@ -649,6 +649,17 @@ nav .addittional-btn {
   border-radius: 12px;
 }
 
+@media (min-width: 768px) {
+  .main-section .picture-container {
+    height: 100vh;
+  }
+}
+
+.main-section picture img {
+  object-fit: cover;
+  height: 100%;
+}
+
 .content-section {
   padding: 0 0 48px;
 }
@@ -910,13 +921,15 @@ nav .addittional-btn {
 
 @media (min-width: 992px) {
   .section-instructors .grid-section {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.8fr 1.2fr;
   }
 }
 
-.section-instructors .grid-item {
-  max-width: 578px;
-}
+/* @media (min-width: 1280px) {
+  .section-instructors .grid-item {
+    max-width: 578px;
+  }
+} */
 
 .radius-img {
   border-radius: 4px;
