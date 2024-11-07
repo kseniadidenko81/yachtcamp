@@ -790,6 +790,10 @@ nav .addittional-btn {
   font-size: 20px;
 }
 
+.section-about h2 {
+  text-transform: none;
+}
+
 .grid-section {
   display: grid;
   column-gap: 40px;
