@@ -173,6 +173,7 @@ $(function () {
       loop: true,
       speed: 600,
       grabCursor: true,
+      spaceBetween: 20,
 
       navigation: {
         nextEl: ".swiper-button-next",
