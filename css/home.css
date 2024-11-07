@@ -681,7 +681,7 @@ nav .addittional-btn {
   padding: 0 0 48px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .content-section {
     max-width: 100%;
     padding: 0;
@@ -694,9 +694,14 @@ nav .addittional-btn {
   }
 
   .main-section img {
-    border-radius: 0;
     max-height: 580px;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .main-section img {
+    border-radius: 0;
   }
 }
 
