@@ -1984,7 +1984,9 @@ input.is-invalid + .invalid-feedback {
 }
 
 .modal-content {
+  position: relative;
   margin: auto;
+  padding: 15px;
 }
 
 .modal-header {
@@ -2077,7 +2079,6 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .modal.show .modal-dialog {
-    width: 830px;
     margin: 0.5rem;
     height: 100vh;
   }
