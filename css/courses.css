@@ -1983,6 +1983,10 @@ input.is-invalid + .invalid-feedback {
   max-width: 830px;
 }
 
+.modal-content {
+  margin: auto;
+}
+
 .modal-header {
   border: none;
   padding: 34px 32px 24px;
