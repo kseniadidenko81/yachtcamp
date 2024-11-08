@@ -383,7 +383,6 @@ section {
   padding: 16px 20px;
   max-height: 60px;
   width: 100%;
-  max-width: 330px;
   min-width: 260px;
   transition: all 0.3s ease;
   display: flex;
@@ -393,6 +392,7 @@ section {
 
 .custom-btn {
   font-family: var(--base-font-family);
+  padding: 16px;
 }
 
 .addittional-btn {
@@ -400,16 +400,17 @@ section {
 }
 
 @media (min-width: 768px) {
+  .custom-btn,
+  .addittional-btn {
+    max-width: 268px;
+  }
+
   .custom-btn {
     font-family: var(--base-font-family);
   }
 
-  .custom-btn,
-  .addittional-btn {
-    font-size: 30px;
-    max-height: 90px;
+  .content-section .custom-btn {
     padding: 24px 20px;
-    max-width: 444px;
   }
 }
 
@@ -743,8 +744,10 @@ nav .addittional-btn {
 .navbar .btn.addittional-btn {
   font-family: var(--additional-font-family);
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
   padding: 10px;
+  max-width: 154px;
+  max-height: 46px;
 }
 
 /* SECTION WHY */
@@ -753,7 +756,6 @@ nav .addittional-btn {
   max-width: 880px;
   position: relative;
   z-index: 10;
-  /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); */
 }
 
 .hero-text p {
@@ -1424,6 +1426,10 @@ nav .addittional-btn {
   }
 }
 
+.bg-pricing .btn {
+  margin: auto;
+}
+
 /* SECTION FAQs */
 .fqs-accordion {
   display: flex;
@@ -1544,7 +1550,7 @@ nav .addittional-btn {
   opacity: 0;
 }
 
-/* Для Google Chrome и других WebKit-браузеров */
+/* Google Chrome, WebKit */
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -1555,7 +1561,7 @@ select:-webkit-autofill {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-/* Для Firefox */
+/* Firefox */
 input:-moz-autofill,
 textarea:-moz-autofill,
 select:-moz-autofill {
@@ -1595,11 +1601,12 @@ textarea.form-control {
   background-image: url(../img/home/check_icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 40px;
   display: inline-block;
   vertical-align: middle;
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-  width: 49px;
-  height: 48px;
+  width: 41px;
+  height: 40px;
   transform: rotate(0deg) scale(1);
 }
 
@@ -1968,4 +1975,143 @@ input.is-invalid + .invalid-feedback {
 .badge-total-reviews:not(:first-child) {
   margin-top: 4px;
   white-space: nowrap;
+}
+
+/* MODAL FORM */
+
+.modal-dialog {
+  max-width: 830px;
+}
+
+.modal-header {
+  border: none;
+  padding: 34px 32px 24px;
+}
+
+.modal-header h6 {
+  font-family: var(--additional-font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.modal-body {
+  padding: 0 32px 32px;
+}
+
+textarea.form-control {
+  height: 138px !important;
+}
+
+@media (max-width: 767px) {
+  .modal-body .form-img {
+    display: none;
+  }
+
+  .modal-header {
+    border: none;
+    padding: 16px;
+  }
+
+  .modal-body {
+    padding: 0 16px 16px;
+  }
+
+  .section-contact-form .form-control {
+    height: 50px;
+  }
+
+  textarea.form-control {
+    height: 80px !important;
+  }
+}
+
+#susbc-form-thank .sub-bg {
+  background: grey;
+}
+.modal .sub-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-contact-form .custom-btn {
+  padding: 16px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-contact-form .custom-btn {
+    padding: 16px 20px;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal.show .modal-dialog {
+  padding: 12px;
+  margin: 0.5rem 0;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 830px;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .modal.show .modal-dialog {
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media (min-width: 992px) {
+  .modal.show .modal-dialog {
+    width: 830px;
+    margin: 0.5rem;
+    height: 100vh;
+  }
+}
+
+.modal .close:not(:disabled):not(.disabled):focus,
+.modal .close:not(:disabled):not(.disabled):hover {
+  outline: none;
+}
+
+.modal .close {
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  color: #fff;
+  opacity: 0.8;
+  width: 42px;
+  height: 42px;
+  font-size: 25px;
+}
+
+.section-contact-form .bg-form img {
+  max-height: 464px;
+}
+
+.check-icon {
+  background-image: url(../img/home/check_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  width: 49px;
+  height: 48px;
+  transform: rotate(0deg) scale(1);
+}
+
+.text-button {
+  vertical-align: middle;
 }
