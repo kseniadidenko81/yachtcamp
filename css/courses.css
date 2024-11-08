@@ -373,38 +373,43 @@ section {
 
 .custom-btn,
 .addittional-btn {
-  font-family: var(--base-font-family);
+  font-family: var(--additional-font-family);
   background: #b28224;
   border-radius: 8px;
   color: #fff;
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 24px;
   font-weight: 700;
   white-space: nowrap;
-  padding: 20px 26px;
+  padding: 16px 20px;
+  max-height: 60px;
   width: 100%;
-  max-width: 444px;
+  max-width: 330px;
   min-width: 260px;
   transition: all 0.3s ease;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media (min-width: 992px) {
-  .custom-btn,
-  .addittional-btn {
-    font-size: 30px;
-  }
+.custom-btn {
+  font-family: var(--base-font-family);
 }
 
 .addittional-btn {
-  font-family: var(--additional-font-family);
   background: #011928;
 }
 
 @media (min-width: 768px) {
+  .custom-btn {
+    font-family: var(--base-font-family);
+  }
+
+  .custom-btn,
   .addittional-btn {
-    max-width: 268px;
+    font-size: 30px;
+    max-height: 90px;
+    padding: 24px 20px;
+    max-width: 444px;
   }
 }
 
@@ -420,6 +425,7 @@ nav .addittional-btn {
     max-width: 180px;
     min-width: 120px;
     margin-left: 16px;
+    font-weight: 700;
   }
 }
 
@@ -738,6 +744,7 @@ nav .addittional-btn {
   font-family: var(--additional-font-family);
   font-size: 16px;
   line-height: 26px;
+  padding: 10px;
 }
 
 /* SECTION WHY */
@@ -943,11 +950,9 @@ nav .addittional-btn {
 .section-course .main-pos-card .btn {
   max-width: 100%;
   margin: 0;
-  padding: 20px 26px;
   position: relative;
-
   margin: auto;
-  display: block;
+  display: flex;
   width: 100%;
 }
 
@@ -1049,12 +1054,11 @@ nav .addittional-btn {
   }
 
   .section-course .inside-pos .btn {
-    padding: 20px 26px;
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
     margin-left: 0;
-    display: block;
+    display: flex;
   }
 
   .section-course .main-pos-card .btn {
