@@ -368,28 +368,26 @@ a:focus-visible {
   background: #b28224;
   border-radius: 8px;
   color: #fff;
-  font-size: 26px;
-  line-height: 26px;
+  font-size: 24px;
   font-weight: 700;
   white-space: nowrap;
-  padding: 20px 26px;
+  padding: 16px 20px;
+  max-height: 60px;
   width: 100%;
   max-width: 444px;
   min-width: 260px;
   transition: all 0.3s ease;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .custom-btn {
   font-family: var(--base-font-family);
+  padding: 16px;
 }
 
 @media (min-width: 992px) {
-  .custom-btn,
-  .addittional-btn {
-    font-size: 30px;
-  }
 }
 
 .addittional-btn {
@@ -397,8 +395,25 @@ a:focus-visible {
 }
 
 @media (min-width: 768px) {
+  .custom-btn,
   .addittional-btn {
+    font-size: 30px;
+    max-width: 444px;
+    max-height: 90px;
+  }
+
+  .custom-btn {
+    font-family: var(--base-font-family);
+  }
+
+  .addittional-btn {
+    font-size: 24px;
     max-width: 268px;
+    max-height: 60px;
+  }
+
+  .content-section .custom-btn {
+    padding: 24px 20px;
   }
 }
 
@@ -726,6 +741,7 @@ nav .addittional-btn {
   font-family: var(--additional-font-family);
   font-size: 16px;
   line-height: 26px;
+  padding: 10px;
 }
 
 /* SECTION MAIN */
