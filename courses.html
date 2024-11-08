@@ -93,8 +93,8 @@
               <a
                 class="btn btn-to addittional-btn"
                 data-toggle="modal"
-                href="javascript:void(0);"
-                >Join now</a
+                href="#susbc-form"
+                >Contact us</a
               >
 
               <div class="nav-bottom text-center w-100">
@@ -190,7 +190,10 @@
                   your sailing certification while exploring the Canary islands.
                 </p>
 
-                <a href="javascript:void(0);" class="btn btn-to custom-btn mt-3"
+                <a
+                  data-toggle="modal"
+                  href="#susbc-form"
+                  class="btn btn-to custom-btn mt-3"
                   >Book Now</a
                 >
               </div>
@@ -399,7 +402,10 @@
                     take on bigger sailing challenges.
                   </p>
                 </div>
-                <a href="javascript:void(0);" class="btn btn-to addittional-btn"
+                <a
+                  data-toggle="modal"
+                  href="#susbc-form"
+                  class="btn btn-to addittional-btn"
                   >Book Now</a
                 >
               </div>
@@ -415,7 +421,10 @@
                 src="img/img_desc/yacht_img.webp"
                 alt="course yachting"
               />
-              <a href="javascript:void(0);" class="btn btn-to addittional-btn"
+              <a
+                data-toggle="modal"
+                href="#susbc-form"
+                class="btn btn-to addittional-btn"
                 >Book Now</a
               >
             </div>
@@ -712,7 +721,10 @@
             </div>
             <div class="row text-center mt-4">
               <div class="col">
-                <a href="javascript:void(0);" class="btn btn-to custom-btn"
+                <a
+                  data-toggle="modal"
+                  href="#susbc-form"
+                  class="btn btn-to custom-btn"
                   >Book and Save!</a
                 >
               </div>
@@ -1303,6 +1315,130 @@
           </div>
         </div>
       </footer>
+
+      <div class="modal fade section-contact-form" id="susbc-form">
+        <div class="modal-dialog rounded">
+          <div class="modal-content bg-form">
+            <div class="modal-header subs-header position-relative">
+              <div
+                class="text-white text-center d-flex justify-content-center flex-column w-100 me-2"
+              >
+                <h6>Anchor Your Plans!</h6>
+                <p>Contact us to learn more about our Yacht.Camp</p>
+              </div>
+              <button
+                type="button"
+                class="close position-absolute"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-7">
+                  <form id="subs-form">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="your-name"
+                          name="your-name"
+                          placeholder="*Full Name"
+                          required=""
+                          data-has-listeners="true"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="your-email"
+                          name="your-email"
+                          placeholder="*Email"
+                          required=""
+                          data-has-listeners="true"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="phone"
+                          name="phone"
+                          placeholder="*Phone number"
+                          pattern="\+?[0-9\s\-\(\)]{7,15}"
+                          required=""
+                          data-has-listeners="true"
+                        />
+                        <div class="invalid-feedback">
+                          Please enter a valid phone number (e.g., +123 456
+                          7890).
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <textarea
+                          class="form-control"
+                          id="your-message"
+                          name="your-message"
+                          placeholder="Message"
+                          rows="4"
+                          data-has-listeners="true"
+                        ></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          type="submit"
+                          class="btn custom-btn"
+                          id="submit-btn"
+                        >
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-5 form-img">
+                  <img src="img/img_desc/course_img-5.webp" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade section-contact-form" id="susbc-form-thank">
+        <div class="modal-dialog">
+          <div class="modal-content bg-form">
+            <div class="modal-header subs-header position-relative">
+              <div
+                class="text-white text-center d-flex justify-content-center flex-column w-100 me-md-4"
+              >
+                <h6>
+                  Thank you! Your message has been sent. We will contact you.
+                </h6>
+              </div>
+              <button
+                type="button"
+                class="close position-absolute"
+                data-dismiss="modal"
+                aria-hidden="true"
+              >
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="text-white text-center">
+                <button type="submit" class="btn custom-btn">
+                  <span class="check-icon"></span>
+                  <span class="text-button">Sent</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <button id="backToTopBtn" class="back-to-top-btn"></button>
     </main>
