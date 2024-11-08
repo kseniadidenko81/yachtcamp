@@ -263,17 +263,44 @@ $(function () {
 // MODAL FORM
 
 $(function () {
+  $(".modal.fade.section-contact-form").on("show.bs.modal", function () {
+    $(".modal.fade.section-contact-form")
+      .not(this)
+      .removeClass("show")
+      .css("display", "none")
+      .modal("hide");
+  });
+
   $("#subs-form").on("submit", function (e) {
     e.preventDefault();
     $(this)[0].reset();
-    $("#susbc-form").modal("hide");
-    $("#susbc-form-thank").modal("show");
 
+    $("#susbc-form").modal("hide").css("display", "none");
+    $("#susbc-form-thank").modal("show");
+  });
+
+  $(".modal.fade.section-contact-form").on("shown.bs.modal", function () {
     $("body").addClass("modal-open");
   });
 
-  $("#susbc-form, #susbc-form-thank").on("hidden.bs.modal", function () {
-    $("body").removeClass("modal-open");
+  $(".modal.fade.section-contact-form").on("hidden.bs.modal", function () {
+    if ($(".modal.fade.section-contact-form.show").length === 0) {
+      $("body").removeClass("modal-open");
+    }
+
+    if (
+      $(".modal.fade.section-contact-form.show").length === 0 &&
+      $(".modal-backdrop.fade.show").length > 0
+    ) {
+      $(".modal-backdrop.fade").removeClass("show").css("display", "none");
+    }
+  });
+
+  $("#close-thank-modal").on("click", function () {
+    $("#susbc-form-thank")
+      .modal("hide")
+      .removeClass("show")
+      .css("display", "none");
   });
 });
 
