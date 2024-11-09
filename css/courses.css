@@ -1608,7 +1608,7 @@ textarea.form-control {
   display: inline-block;
   vertical-align: middle;
   transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-  width: 41px;
+  width: 40px;
   height: 40px;
   transform: rotate(0deg) scale(1);
 }
@@ -2106,20 +2106,4 @@ textarea.form-control {
 
 .section-contact-form .bg-form img {
   max-height: 464px;
-}
-
-.check-icon {
-  background-image: url(../img/home/check_icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  vertical-align: middle;
-  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
-  width: 41px;
-  height: 40px;
-  transform: rotate(0deg) scale(1);
-}
-
-.text-button {
-  vertical-align: middle;
 }
