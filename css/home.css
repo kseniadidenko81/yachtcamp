@@ -1117,6 +1117,7 @@ nav .addittional-btn {
 @media (min-width: 580px) {
   .section-courses .grid-item-img {
     margin: 0 auto;
+    width: 100%;
   }
 }
 
