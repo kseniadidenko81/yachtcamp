@@ -23,6 +23,7 @@ $(function () {
   });
 
   // SECTION FAQs
+
   $(function () {
     $(".fqs-header").on("click", function () {
       const selector = $(this).data("toggle");
@@ -153,7 +154,6 @@ $(function () {
 });
 
 // READ MORE/LESS TEXT
-
 $(function () {
   $(document).ready(function () {
     let swiper = new Swiper(".instrSwiper", {
