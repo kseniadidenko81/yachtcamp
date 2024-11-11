@@ -24,19 +24,26 @@ $(function () {
 
   // SECTION FAQs
   $(function () {
-    $("[data-toggle]").each(function () {
-      $(this).on("click", function (e) {
-        const selector = $(this).data("toggle");
-        const $block = $(selector);
+    $(".fqs-header").on("click", function () {
+      const selector = $(this).data("toggle");
+      const $content = $(selector);
 
-        if ($(this).hasClass("active")) {
-          $block.css("max-height", "");
-        } else {
-          $block.css("max-height", $block[0].scrollHeight + "px");
-        }
+      if ($content.length === 0) {
+        console.warn(`Элемент не найден для селектора: ${selector}`);
+        return;
+      }
 
-        $(this).toggleClass("active");
-      });
+      if ($content.hasClass("active")) {
+        $content.removeClass("active").css("max-height", "0");
+        $(this).removeClass("active");
+      } else {
+        $(".fqs-content.active").removeClass("active").css("max-height", "0");
+        $(".fqs-header.active").removeClass("active");
+
+        const targetHeight = $content[0].scrollHeight + "px";
+        $content.addClass("active").css("max-height", targetHeight);
+        $(this).addClass("active");
+      }
     });
   });
 
