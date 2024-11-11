@@ -526,7 +526,7 @@ nav .addittional-btn {
 
 .navbar {
   background: none;
-  transition: transform 0.01s ease, background 0.01s ease !important;
+  transition: height 0.01s ease, background 0.01s ease !important;
 }
 
 .navbar.show {
