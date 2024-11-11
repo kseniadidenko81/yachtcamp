@@ -524,18 +524,9 @@ nav .addittional-btn {
   font-weight: 500;
 }
 
-.navbar {
-  transition: transform 0.001s ease, height 0.001s ease, background 0.001s ease;
-}
-
 .navbar.show {
-  background: #efedeb;
   padding: 0;
-  height: 100vh;
   z-index: 100;
-  transform: translateX(0);
-  transition: height 0.001s ease, background 0.001s ease;
-  pointer-events: auto;
 }
 
 .navbar.show .container {
@@ -638,7 +629,19 @@ nav .addittional-btn {
   flex-direction: column;
   margin: auto;
   text-align: center;
+  background: #efedeb;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-collapse.show .navbar-nav {
   background: #fff;
+  width: 100%;
+}
+
+.navbar-collapse.show .nav-bottom-wrap .navbar-nav {
+  background: #efedeb;
 }
 
 .navbar-collapse.show .nav-item .fw-bold {
