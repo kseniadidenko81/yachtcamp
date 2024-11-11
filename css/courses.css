@@ -534,8 +534,7 @@ nav .addittional-btn {
 }
 
 .navbar {
-  background: none;
-  transition: height 0.01s ease, background 0.01s ease;
+  transition: transform 0.001s ease, height 0.001s ease, background 0.001s ease;
 }
 
 .navbar.show {
@@ -543,6 +542,9 @@ nav .addittional-btn {
   padding: 0;
   height: 100vh;
   z-index: 100;
+  transform: translateX(0);
+  transition: height 0.001s ease, background 0.001s ease;
+  pointer-events: auto;
 }
 
 .navbar.show .container {
