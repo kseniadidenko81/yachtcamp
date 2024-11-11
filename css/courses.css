@@ -485,7 +485,7 @@ nav .addittional-btn {
 
 @media (min-width: 1280px) {
   .navbar {
-    padding: 15px 15px 15px 30px;
+    padding: 15px 40px 15px;
   }
 }
 
@@ -573,6 +573,13 @@ nav .addittional-btn {
 @media (min-width: 580px) {
   .navbar.show.scrolled .navbar-brand img {
     max-width: 293px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: content;
   }
 }
 
