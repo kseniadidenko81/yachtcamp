@@ -459,7 +459,7 @@ nav .addittional-btn {
 /* SECTION NAVBAR */
 
 .navbar {
-  padding: 15px;
+  padding: 0;
   top: 0;
   width: 100%;
   z-index: 2;
@@ -468,7 +468,7 @@ nav .addittional-btn {
   z-index: 10;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar {
     padding: 15px;
   }
@@ -481,14 +481,14 @@ nav .addittional-btn {
 }
 
 .navbar.scrolled {
-  padding: 6px 15px;
+  padding: 0;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
   z-index: 100;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .navbar.scrolled {
     padding: 6px 25px 6px 25px;
   }
@@ -544,10 +544,6 @@ nav .addittional-btn {
   height: auto;
 }
 
-.navbar.show .nav-top {
-  background: #fff;
-}
-
 .navbar.show .nav-bottom {
   display: block;
   background: #efedeb;
@@ -555,8 +551,8 @@ nav .addittional-btn {
 }
 
 .navbar.show .nav-top {
+  background: #fff;
   box-shadow: 0px 2px 6px 0px #0000001a;
-  padding: 0.5rem 1rem;
   position: relative;
   z-index: 1;
 }
@@ -633,6 +629,7 @@ nav .addittional-btn {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
+  margin-top: 56px;
 }
 
 .navbar-collapse.show .navbar-nav {
@@ -646,6 +643,10 @@ nav .addittional-btn {
 
 .navbar-collapse.show .nav-item .fw-bold {
   font-family: var(--base-font-family);
+}
+
+.navbar .nav-top {
+  padding: 0.5rem 1rem;
 }
 
 @media (max-width: 991px) {
@@ -668,7 +669,31 @@ nav .addittional-btn {
     transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
-    margin-top: 56px;
+    margin-top: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse.show {
+    margin-top: 66px;
+  }
+
+  .navbar .nav-top {
+    padding: 0.5rem 0rem;
+  }
+
+  .navbar.show .nav-top {
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media (min-width: 780px) {
+  .navbar .nav-top {
+    padding: 0rem;
+  }
+
+  .navbar.show .nav-top {
+    padding: 0rem;
   }
 }
 
