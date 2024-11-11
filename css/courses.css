@@ -483,12 +483,6 @@ nav .addittional-btn {
   }
 }
 
-@media (min-width: 1280px) {
-  .navbar {
-    padding: 15px 40px;
-  }
-}
-
 .navbar.scrolled {
   padding: 0;
   background-color: rgba(255, 255, 255, 0.9);
@@ -499,7 +493,17 @@ nav .addittional-btn {
 
 @media (min-width: 992px) {
   .navbar.scrolled {
-    padding: 6px 40px;
+    padding: 6px 25px 6px 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 15px 40px;
+  }
+
+  .navbar.scrolled {
+    padding: 6px 25px 6px 25px;
   }
 }
 
