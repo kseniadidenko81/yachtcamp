@@ -530,6 +530,16 @@ nav .addittional-btn {
 
 .navbar .copy-wrap {
   font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar {
+  background: none;
+  transition: transform 0.01s ease, background 0.01s ease;
+}
+
+.navbar.show {
+  background: #efedeb;
 }
 
 .navbar.show {
@@ -554,13 +564,6 @@ nav .addittional-btn {
   height: auto;
 }
 
-@media (min-width: 768px) {
-  .nav-bottom h4 {
-    font-size: 20px;
-    line-height: 22px;
-  }
-}
-
 .navbar.show .nav-top {
   background: #fff;
 }
@@ -569,7 +572,6 @@ nav .addittional-btn {
   display: block;
   background: #efedeb;
   padding: 16px 0;
-  font-family: var(--additional-font-family);
 }
 
 .navbar.show .nav-top {
