@@ -531,10 +531,6 @@ nav .addittional-btn {
 
 .navbar.show {
   background: #efedeb;
-}
-
-.navbar.show {
-  background: #efedeb;
   padding: 0;
   height: 100vh;
   z-index: 100;
