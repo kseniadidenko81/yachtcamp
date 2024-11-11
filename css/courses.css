@@ -1460,6 +1460,7 @@ nav .addittional-btn {
   padding: 16px 24px 16px 28px;
   cursor: pointer;
   position: relative;
+  margin: 0;
 }
 
 .fqs-header::after {
