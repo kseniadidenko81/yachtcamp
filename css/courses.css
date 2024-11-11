@@ -1486,6 +1486,10 @@ nav .addittional-btn {
   transition: 0.5s;
   overflow: hidden;
   font-style: italic;
+  transition: max-height 0.4s ease;
+}
+.fqs-content.active {
+  max-height: 500px; /* Укажите достаточно большое значение */
 }
 
 .fqs-item + .fqs-item {
