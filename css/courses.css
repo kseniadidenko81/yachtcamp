@@ -1994,6 +1994,12 @@ input.is-invalid + .invalid-feedback {
   max-width: 830px;
 }
 
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 15px;
+}
+
 .modal-header {
   border: none;
   padding: 34px 32px 24px;
@@ -2084,7 +2090,6 @@ textarea.form-control {
 
 @media (min-width: 992px) {
   .modal.show .modal-dialog {
-    width: 830px;
     margin: 0.5rem;
     height: 100vh;
   }
@@ -2105,6 +2110,38 @@ textarea.form-control {
   width: 42px;
   height: 42px;
   font-size: 25px;
+}
+
+.section-contact-form .bg-form img {
+  max-height: 464px;
+}
+
+.check-icon {
+  background-image: url(../img/home/check_icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  width: 40px;
+  height: 40px;
+  transform: rotate(0deg) scale(1);
+}
+
+.text-button {
+  vertical-align: middle;
+}
+
+.section-contact-form .custom-btn {
+  padding: 16px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section-contact-form .custom-btn {
+    padding: 16px 20px;
+  }
 }
 
 .section-contact-form .bg-form img {
