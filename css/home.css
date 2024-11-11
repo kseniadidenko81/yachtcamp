@@ -560,7 +560,7 @@ nav .addittional-btn {
   box-shadow: 0px 2px 6px 0px #0000001a;
   padding: 0.5rem 1rem;
   position: relative;
-    z-index: 1;
+  z-index: 1;
 }
 
 .navbar.show.scrolled .navbar-brand img {
@@ -790,12 +790,7 @@ nav .addittional-btn {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-}
-
-@media (min-width: 992px) {
-  .main-icon-items {
-    max-width: 444px;
-  }
+  max-width: 365px;
 }
 
 .text-with-line {
@@ -805,25 +800,9 @@ nav .addittional-btn {
   font-weight: 400;
 }
 
-.text-with-line::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -10px;
-  width: 1px;
-  height: 100%;
-  background-color: #324149;
-}
-
-@media (min-width: 992px) {
-  .text-with-line::after {
-    right: 0;
-  }
-}
-
 .count-item {
   font-size: 24px;
-  line-height: 60px;
+  line-height: 36px;
   font-weight: 700;
 }
 
