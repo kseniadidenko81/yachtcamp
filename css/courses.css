@@ -485,7 +485,7 @@ nav .addittional-btn {
 
 @media (min-width: 1280px) {
   .navbar {
-    padding: 15px 40px 15px;
+    padding: 15px 40px;
   }
 }
 
@@ -499,7 +499,7 @@ nav .addittional-btn {
 
 @media (min-width: 992px) {
   .navbar.scrolled {
-    padding: 6px 25px 6px 25px;
+    padding: 6px 40px;
   }
 }
 
