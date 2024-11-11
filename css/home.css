@@ -524,6 +524,15 @@ nav .addittional-btn {
   font-weight: 500;
 }
 
+.navbar {
+  background: none;
+  transition: transform 0.01s ease, background 0.01s ease;
+}
+
+.navbar.show {
+  background: #efedeb;
+}
+
 .navbar.show {
   background: #efedeb;
   padding: 0;
