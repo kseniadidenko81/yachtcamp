@@ -112,13 +112,12 @@ h2 {
   line-height: 48px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
   h2 {
     font-size: 40px;
-    line-height: 60px;
     margin-bottom: 38px;
   }
 }
@@ -828,8 +827,8 @@ nav .addittional-btn {
 .text-icon-card {
   font-family: var(--additional-font-family);
   font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: 768px) {
