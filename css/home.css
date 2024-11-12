@@ -1992,8 +1992,8 @@ textarea.form-control {
   }
 
   .modal .close {
-    right: -14px;
-    top: -14px;
+    right: -14px !important;
+    top: -14px !important;
   }
 
   .section-contact-form .form-control {
