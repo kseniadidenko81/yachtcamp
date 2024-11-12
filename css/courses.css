@@ -1635,6 +1635,7 @@ textarea.form-control {
 @media (max-width: 767px) {
   .section-contact-form .custom-btn {
     max-width: 100%;
+    min-width: 224px;
   }
 }
 
