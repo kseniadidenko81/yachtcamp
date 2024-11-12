@@ -109,6 +109,7 @@ h1 {
 h2 {
   font-family: var(--additional-font-family);
   font-size: 32px;
+  line-height: 48px;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 500;
@@ -866,10 +867,6 @@ nav .addittional-btn {
   background: #011928;
 }
 
-.section-advantage h2 {
-  font-weight: 600;
-}
-
 .cards-advantage {
   display: grid;
   column-gap: 40px;
@@ -892,9 +889,6 @@ nav .addittional-btn {
 }
 
 /* SECTION ABOUT US */
-.section-about h2 {
-  font-weight: 600;
-}
 
 .section-about h4 {
   font-family: var(--base-font-family);
@@ -993,6 +987,10 @@ nav .addittional-btn {
   margin-top: 10px;
 }
 
+.timeline-content:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 768px) {
   .timeline-content {
     margin-left: 40px;
@@ -1063,6 +1061,19 @@ nav .addittional-btn {
 @media (min-width: 768px) {
   .radius-img {
     border-radius: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .radius-img {
+    max-height: 480px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1280px) {
+  .radius-img {
+    max-height: 420px;
   }
 }
 
