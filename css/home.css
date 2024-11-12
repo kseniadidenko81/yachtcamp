@@ -1984,11 +1984,16 @@ textarea.form-control {
 
   .modal-header {
     border: none;
-    padding: 16px;
+    padding: 8px 16px 16px 8px;
   }
 
   .modal-body {
-    padding: 0 16px 16px;
+    padding: 0;
+  }
+
+  .modal .close {
+    right: -14px;
+    top: -14px;
   }
 
   .section-contact-form .form-control {
