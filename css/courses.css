@@ -1525,7 +1525,7 @@ nav .addittional-btn {
   transition: max-height 0.4s ease;
 }
 .fqs-content.active {
-  max-height: 500px; /* Укажите достаточно большое значение */
+  max-height: 500px;
 }
 
 .fqs-item + .fqs-item {
@@ -2088,6 +2088,7 @@ textarea.form-control {
     height: 80px !important;
   }
 }
+
 #susbc-form-thank .sub-bg {
   background: grey;
 }
