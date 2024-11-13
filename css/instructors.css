@@ -947,6 +947,28 @@ nav .addittional-btn {
   }
 }
 
+.read-more-target {
+  display: none;
+}
+
+.read-more,
+.read-less {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .read-more,
+  .read-less {
+    display: block;
+    cursor: pointer;
+    text-align: right;
+    text-decoration: underline;
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+  }
+}
+
 /* SECTION FOOTER */
 
 .section-footer h2 {
