@@ -808,6 +808,8 @@ nav .addittional-btn {
 
 .main-section img {
   border-radius: 12px;
+  max-height: 480px;
+  object-fit: cover;
 }
 
 .content-section {
