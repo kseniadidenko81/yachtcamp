@@ -860,6 +860,11 @@ nav .addittional-btn {
   }
 }
 
+.section-courses .link-item:hover {
+  color: #011928;
+  text-decoration-color: #011928 !important;
+}
+
 .section-courses .grid-item-img {
   margin: 0 -20px;
 }
