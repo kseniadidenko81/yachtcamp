@@ -870,13 +870,15 @@ nav .addittional-btn {
 }
 
 @media (max-width: 767px) {
-  .grid-top .flex-img {
+  .grid-top .flex-img,
+  .grid-bottom .flex-img {
     margin: 0 -20px;
   }
 }
 
 @media (max-width: 580px) {
-  .grid-top .flex-img img {
+  .grid-top .flex-img img,
+  .grid-bottom .flex-img img {
     border-radius: 0;
   }
 }
