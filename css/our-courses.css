@@ -813,6 +813,12 @@ nav .addittional-btn {
 
 @media (min-width: 768px) {
   .row-courses {
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-courses {
     padding-bottom: 60px;
   }
 }
@@ -832,6 +838,12 @@ nav .addittional-btn {
 }
 
 @media (min-width: 768px) {
+  .section-courses {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 992px) {
   .section-courses {
     margin-top: 48px;
   }
