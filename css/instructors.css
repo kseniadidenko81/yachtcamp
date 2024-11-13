@@ -344,7 +344,7 @@ a:focus-visible {
 
 .grid-section {
   display: grid;
-  column-gap: 24px;
+  grid-gap: 24px;
   grid-template-columns: repeat(1, 1fr);
 }
 
