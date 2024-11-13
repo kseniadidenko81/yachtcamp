@@ -365,6 +365,12 @@ a:focus-visible {
   background: #c72222 !important;
 }
 
+@media (max-width: 420px) {
+  .text-bg-special {
+    margin-top: 12px;
+  }
+}
+
 .badge {
   border-radius: 20px !important;
   line-height: 18px !important;
