@@ -889,6 +889,7 @@ nav .addittional-btn {
 
 @media (min-width: 580px) {
   .radius-img {
+    max-width: 500px;
     border-radius: 12px;
   }
 }
