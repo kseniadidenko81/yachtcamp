@@ -956,7 +956,7 @@ nav .addittional-btn {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .read-more,
   .read-less {
     display: block;
@@ -966,6 +966,12 @@ nav .addittional-btn {
     position: absolute;
     right: 0px;
     bottom: -10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .read-more-target {
+    display: block !important;
   }
 }
 
