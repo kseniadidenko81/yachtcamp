@@ -681,11 +681,25 @@ nav .addittional-btn {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .navbar-collapse.show {
-    margin-top: 66px;
+    margin-top: 65px;
   }
+}
 
+@media (max-width: 480px) {
+  .navbar-collapse.show {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar-collapse.show {
+    margin-top: 51px;
+  }
+}
+
+@media (min-width: 768px) {
   .navbar .nav-top {
     padding: 0.5rem 0rem;
   }
