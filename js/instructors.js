@@ -129,7 +129,7 @@ $(function () {
 
 // READ MORE/LESS TEXT
 $(function () {
-  if ($(window).width() <= 768) {
+  if ($(window).width() <= 767) {
     $(".read-more").on("click", function () {
       let $target = $(this)
         .siblings(".read-more-wrap")
@@ -204,51 +204,3 @@ $(function () {
       .css("display", "none");
   });
 });
-
-// SWIPER
-
-var swiper1 = new Swiper(".swiper1", {
-  autoHeight: true,
-  slidesPerView: 1,
-  loop: true,
-  speed: 600,
-  centeredSlides: true,
-  loopedSlides: 3,
-  effect: "coverflow",
-  grabCursor: true,
-  spaceBetween: 0,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 800,
-    modifier: 1,
-    slideShadows: false,
-  },
-  navigation: {
-    nextEl: ".swiper1-button-next",
-    prevEl: ".swiper1-button-prev",
-  },
-});
-
-// var swiper2 = new Swiper(".swiper2", {
-//   autoHeight: true,
-//   slidesPerView: 1,
-//   loop: true,
-//   speed: 600,
-//   loopedSlides: 3,
-//   effect: "coverflow",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   spaceBetween: 0,
-//   coverflowEffect: {
-//     rotate: 0,
-//     stretch: 0,
-//     depth: 800,
-//     modifier: 1,
-//     slideShadows: false,
-//   },
-//   navigation: {
-//     nextEl: ".swiper2-button-next",
-//     prevEl: ".swiper2-button-prev",
-//   },
-// });
