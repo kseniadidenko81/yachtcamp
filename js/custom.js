@@ -6,21 +6,49 @@ $(function () {
     anchorPlacement: "center-bottom",
   });
 
-  // SMOOTHSCROLL NAVBAR
-  $(function () {
-    $(".navbar a, .hero-text a").on("click", function (event) {
-      var $anchor = $(this);
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            scrollTop: $($anchor.attr("href")).offset().top - 49,
-          },
-          1000
-        );
+  // ANCHOR
+  document
+    .querySelector("#scroll-to-footer .smoothScroll")
+    .addEventListener("click", function (event) {
       event.preventDefault();
+
+      let targetId = this.getAttribute("data-target");
+
+      if (!targetId || targetId === "#") return;
+
+      let targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        let navbarHeight = 49;
+        let targetPosition =
+          targetSection.getBoundingClientRect().top +
+          window.scrollY -
+          navbarHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      } else {
+        console.error("Target section not found:", targetId);
+      }
     });
-  });
+
+  // SMOOTHSCROLL NAVBAR
+  // $(function () {
+  //   $(".navbar a, .hero-text a").on("click", function (event) {
+  //     var $anchor = $(this);
+  //     $("html, body")
+  //       .stop()
+  //       .animate(
+  //         {
+  //           scrollTop: $($anchor.attr("href")).offset().top - 49,
+  //         },
+  //         1000
+  //       );
+  //     event.preventDefault();
+  //   });
+  // });
 
   // SECTION FAQs
 
@@ -246,28 +274,6 @@ $(function () {
       .css("display", "none");
   });
 });
-
-// ANCHOR
-document
-  .querySelector("#scroll-to-footer .smoothScroll")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-
-    let targetId = this.getAttribute("data-target");
-    let targetSection = document.querySelector(targetId);
-    if (targetSection) {
-      let navbarHeight = 67;
-      let targetPosition =
-        targetSection.getBoundingClientRect().top +
-        window.scrollY -
-        navbarHeight;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
-    }
-  });
 
 // SWIPER
 
