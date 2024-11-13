@@ -161,6 +161,28 @@ $(function () {
   }
 });
 
+// ANCHOR
+document
+  .querySelector("#scroll-to-footer .smoothScroll")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+
+    let targetId = this.getAttribute("data-target");
+    let targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      let navbarHeight = 67;
+      let targetPosition =
+        targetSection.getBoundingClientRect().top +
+        window.scrollY -
+        navbarHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  });
+
 // MODAL FORM
 
 $(function () {
