@@ -873,10 +873,11 @@ nav .addittional-btn {
   grid-template-columns: repeat(1, 1fr);
 }
 
-@media (min-width: 992px) {
-  .section-instructors .grid-bottom {
-    grid-template-columns: 1.2fr 1.8fr;
-    column-gap: 56px;
+@media (min-width: 580px) {
+  .radius-img {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 12px;
   }
 }
 
@@ -887,10 +888,10 @@ nav .addittional-btn {
   }
 }
 
-@media (min-width: 580px) {
-  .radius-img {
-    max-width: 500px;
-    border-radius: 12px;
+@media (min-width: 992px) {
+  .section-instructors .grid-bottom {
+    grid-template-columns: 1.2fr 1.8fr;
+    column-gap: 56px;
   }
 }
 
