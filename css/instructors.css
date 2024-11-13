@@ -813,6 +813,12 @@ nav .addittional-btn {
 
 @media (min-width: 768px) {
   .row-instructors {
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-instructors {
     padding-bottom: 60px;
   }
 }
@@ -832,6 +838,12 @@ nav .addittional-btn {
 }
 
 @media (min-width: 768px) {
+  .section-instructors {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 992px) {
   .section-instructors {
     margin-top: 48px;
   }
@@ -923,6 +935,12 @@ nav .addittional-btn {
 }
 
 @media (min-width: 768px) {
+  .horizontal-line {
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 992px) {
   .horizontal-line {
     margin: 63px auto;
   }
