@@ -102,7 +102,7 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     font-size: 52px;
-    line-height: 46px;
+    line-height: 61px;
   }
 }
 
@@ -788,11 +788,26 @@ nav .addittional-btn {
 }
 
 .main-nav-screen {
-  background-image: url(../img/img_desc/main_img.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+.main-nav-screen {
+  background-image: url(../img/img_desc/main_img.webp);
+}
+
+.main-nav-screen-mooring {
+  background-image: url(../img/img_desc/main-mooring_img.webp);
+}
+
+.main-nav-screen-sail {
+  background-image: url(../img/img_desc/main-sail_img.webp);
+}
+
+.main-nav-screen-storm {
+  background-image: url(../img/img_desc/main-storm_img.webp);
 }
 
 .navbar .btn.addittional-btn {
@@ -834,6 +849,10 @@ nav .addittional-btn {
 @media (min-width: 480px) {
   .icon-head {
     max-width: 108px;
+  }
+
+  .icon-head-mini {
+    max-width: 90px;
   }
 }
 
@@ -972,6 +991,13 @@ nav .addittional-btn {
   display: flex;
 }
 
+.section-experience .card-icon-3 {
+  width: 84px;
+  height: 84px;
+  margin: auto;
+  display: block;
+}
+
 .section-experience .card-icon-2 {
   width: 84px;
   height: 84px;
@@ -982,6 +1008,11 @@ nav .addittional-btn {
 @media (min-width: 768px) {
   .section-experience .card-icon-1 {
     width: 200px;
+    height: 120px;
+  }
+
+  .section-experience .card-icon-3 {
+    width: 120px;
     height: 120px;
   }
 
