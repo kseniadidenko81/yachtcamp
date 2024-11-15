@@ -1011,14 +1011,9 @@ nav .addittional-btn {
     height: 120px;
   }
 
-  .section-experience .card-icon-3 {
+  .section-experience .card-icon-2, .section-experience .card-icon-3 {
     width: 100px;
     height: 100px;
-  }
-
-  .section-experience .card-icon-2 {
-    width: 120px;
-    height: 120px;
   }
 }
 
