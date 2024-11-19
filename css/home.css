@@ -94,7 +94,7 @@ nav .container {
 h1 {
   font-family: var(--additional-font-family);
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 46px;
 }
@@ -2010,6 +2010,10 @@ input.is-invalid + .invalid-feedback {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
+}
+
+#susbc-form-thank .modal-header h6 {
+  font-weight: 400;
 }
 
 .modal-body {
