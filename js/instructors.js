@@ -163,28 +163,13 @@ $(function () {
         .siblings(".read-more-wrap")
         .find(".read-more-target");
 
-      $(".read-less").remove();
-      $(".read-more").show();
+      if (!$target.hasClass("slide-down")) {
+        $target.stop(true).slideDown(500, "swing", () => {
+          $target.addClass("slide-down");
+        });
 
-      $target.stop(true).slideDown(500, "swing", () => {
-        $target.addClass("slide-down");
-      });
-
-      $(this).hide();
-      $(this).after('<span class="read-less">Read Less</span>');
-    });
-
-    $(document).on("click", ".read-less", function () {
-      let $target = $(this)
-        .siblings(".read-more-wrap")
-        .find(".read-more-target");
-
-      $target.stop(true).slideUp(500, "swing", () => {
-        $target.removeClass("slide-down");
-      });
-
-      $(".read-more").show();
-      $(this).remove();
+        $(this).hide();
+      }
     });
   }
 });
