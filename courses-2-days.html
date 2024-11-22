@@ -16,20 +16,75 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="preload"
+      href="fonts/montserrat/montserrat-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins/poppins-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat/montserrat-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins/poppins-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat/montserrat-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins/poppins-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat/montserrat-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/poppins/poppins-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
     <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/courses.css" />
 
     <!-- <script
@@ -425,11 +480,21 @@
                 <span class="d-block">Who Is This</span>
                 <span class="d-block">Course For?</span>
               </h2>
-              <img
-                class="yacht-img"
-                src="img/img_desc/yacht_img.webp"
-                alt="course yachting"
-              />
+              <picture>
+                <img
+                  src="img/img_desc/yacht_img.webp"
+                  srcset="
+                    img/img_desc/yacht_img.webp  768w,
+                    img/img_desc/yacht_img.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="course yachting"
+                  width="780"
+                  height="538"
+                  loading="lazy"
+                  class="yacht-img"
+                />
+              </picture>
               <a
                 data-toggle="modal"
                 href="#susbc-form"
@@ -689,7 +754,7 @@
           <div class="container py-5">
             <div class="row">
               <div class="col-12 col-md-6">
-                <dl class="d-flex align-items-md-center py-2">
+                <dl class="d-flex align-items-md-center py-2 m-0">
                   <dt>
                     <img
                       class="icon-pricing"
@@ -697,11 +762,11 @@
                       alt="price tag icon"
                     />
                   </dt>
-                  <dd class="ps-3 mb-0">
-                    <h5 class="pb-2">Regular Price: €700/person</h5>
+                  <dd class="ms-3 mb-0">
+                    <h5>Regular Price: €700/person</h5>
                   </dd>
                 </dl>
-                <dl class="d-flex align-items-md-start py-2">
+                <dl class="d-flex align-items-md-start py-2 m-0">
                   <dt class="">
                     <img
                       class="icon-pricing"
@@ -709,8 +774,8 @@
                       alt="price icon"
                     />
                   </dt>
-                  <dd class="ps-3 mb-0">
-                    <h5 class="pb-2">Special Offer - €630/person</h5>
+                  <dd class="ms-3 mb-0">
+                    <h5>Special Offer - €630/person</h5>
                     <p>
                       If you book the course with a friend, both of you will
                       receive a 10%OFF.
@@ -719,7 +784,7 @@
                 </dl>
               </div>
               <div class="col-12 col-md-6 py-2 ps-md-4">
-                <h5 class="pb-2 text-center text-sm-start">What’s Included</h5>
+                <h5 class="text-center text-sm-start">What’s Included</h5>
                 <ul>
                   <li>100% practical training on real-life situations</li>
                   <li>Experienced instructor</li>
@@ -968,7 +1033,20 @@
                 </form>
               </div>
               <div class="col-md-5">
-                <img class="" src="img/img_desc/course_img-5.webp" />
+                <picture>
+                  <img
+                    src="img/img_desc/course_img-5.webp"
+                    srcset="
+                      img/img_desc/course_img-5.webp  768w,
+                      img/img_desc/course_img-5.webp 1200w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                    alt="form image"
+                    width="350"
+                    height="467"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
           </div>
